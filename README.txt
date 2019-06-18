@@ -13,8 +13,13 @@ https://www.supinfo.com/articles/single/946-npm-package-manager-nodejs
 
 Installation de Gulp
 :/var/www/drupal-8/themes/custom/dossier_projet$ sudo npm init (création du fichier  package.json + dossier node_modules)
-:/var/www/drupal-8/themes/custom/dossier_projet$ npm install gulp --save-dev
+:/var/www/drupal-8/themes/custom/dossier_projet$ npm install gulp@^3.0.0 --save-dev
 Utilise Gulp 3 car sinon synthaxe change avec Gulp 4 et cause une erreur.
+Vérifier version avant avec gulp -v doit renvoyer CLI version 3.9.1 Mais il faut la même en Local.
+
+
+Si besoin de MAJ de NPM:
+sudo npm update puis npm i npm
 
 Plugin pour Gulp (permet de charger tous les plugins)
 :/var/www/drupal-8/themes/custom/dossier_projet$ npm install gulp-load-plugins --save-dev
@@ -30,13 +35,13 @@ npm uninstall <nom du package>
 
 !! Remplacer gulp-autoprefixer par autoprefixer pour avoir la dernière version du package.Utiliser avec PostCSS
 https://github.com/postcss/autoprefixer
-npm install --save-dev autoprefixer gulp-postcss
+npm install --save-dev autoprefixer gulp-postcss browserslist
 
 https://github.com/at-import/breakpoint
 
 BROWSER SYNC
 -----------------
-:/var/www/drupal-8/sites/all/themes/dossier_projet$ npm install browser-sync --save-dev
+$:/var/www/drupal-8/sites/all/themes/dossier_projet$ npm install browser-sync --save-dev
 
 
 REGLAGES A FAIRE

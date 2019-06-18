@@ -52,18 +52,18 @@ var assetsPath = {
   gems: [
 //    basePaths.gems + 'susy-2.2.2/sass',
     basePaths.gems + 'breakpoint-2.7.1/stylesheets'
-    
-    
+
+
   ],
    node_modules: [
-       //Ajoutés avec les gems pour simplifier     
-    basePaths.node_modules +  'node-normalize-scss',       
+       //Ajoutés avec les gems pour simplifier
+    basePaths.node_modules +  'node-normalize-scss',
     basePaths.node_modules +  'susy/sass',
     basePaths.node_modules +  'typey/stylesheets/_typey.scss'
   ],
   javascript: [
-    
-       
+
+
   ]
 };
 // Requis
@@ -83,7 +83,7 @@ var autoprefixer = require('autoprefixer');
 
 
 // Autoprefixer : Navigateurs à cibler pour le préfixage CSS
-var AUTOPREFIXER_BROWSERS = [
+var BROWSERSLIST = [
 
 '> 1%',
 'ie >= 8',
@@ -102,12 +102,12 @@ var AUTOPREFIXER_BROWSERS = [
 //https://webdesign.tutsplus.com/tutorials/postcss-quickstart-guide-gulp-setup--cms-24543
 var processors = [
   autoprefixer(  {
-                                browsers: AUTOPREFIXER_BROWSERS,
+                                browsers: BROWSERSLIST,
                                 cascade: false,
                                 //activation du prefixage pour grid
-                                grid: true 
+                                grid: true
                             })
-                            
+
 //  cssnext,
 //  precss
 ];
@@ -128,13 +128,13 @@ var processors = [
 //}
 
 //Variables spécifiques au thèmes
-var urlSite = ['http://d8-celony.vmdev/'];
-var aliasDrush = ['@vmdevd8ce'];
+var urlSite = ['http://d8-gasquet.vmdev/'];
+var aliasDrush = ['@vmdevd8mg'];
 // #############################
 // Tâches à accomplir - Tasks
 // #############################
-// 
-// 
+//
+//
 gulp.task('sasscompil', function () {
     return gulp.src(basePaths.src)
 //    return gulp.src('./sass/**/*.scss')
@@ -173,10 +173,10 @@ gulp.task('drush', function() {
   return gulp.src(basePaths.drushscript, {
       read: false
     })
-    
+
     .pipe(plugins.shell([
       'drush @vmdevd6pf cron && drush @vmdevd6pf cc all'
-      
+
     ]))
     .pipe(plugins.notify({
       title: "Vidage de Cache",
