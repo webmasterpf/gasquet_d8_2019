@@ -74,7 +74,6 @@ regions:
 #  centre_partenaire: 'Zone centrale page partenaire'
 
 
-
  #Region pour les node.tpl (ajouter dans fichier MON_THEME.theme)
 
   region_Zone_1: 'Zone 1 - Bloc'

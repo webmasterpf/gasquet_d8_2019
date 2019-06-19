@@ -83,7 +83,7 @@ var autoprefixer = require('autoprefixer');
 
 
 // Autoprefixer : Navigateurs à cibler pour le préfixage CSS
-var BROWSERSLIST = [
+var AUTOPREFIXER = [
 
 '> 1%',
 'ie >= 8',
@@ -102,13 +102,13 @@ var BROWSERSLIST = [
 //https://webdesign.tutsplus.com/tutorials/postcss-quickstart-guide-gulp-setup--cms-24543
 var processors = [
   autoprefixer(  {
-                                browsers: BROWSERSLIST,
+                                browsers: AUTOPREFIXER,
                                 cascade: false,
                                 //activation du prefixage pour grid
                                 grid: true
                             })
 
-//  cssnext,
+//  cssnext,n'existe plus - 06/19
 //  precss
 ];
 // A display error function, to format and make custom errors more uniform
@@ -129,7 +129,7 @@ var processors = [
 
 //Variables spécifiques au thèmes
 var urlSite = ['http://d8-gasquet.vmdev/'];
-var aliasDrush = ['@vmdevd8mg'];
+var aliasDrush = ['@vmdevd8'];
 // #############################
 // Tâches à accomplir - Tasks
 // #############################
@@ -142,7 +142,7 @@ gulp.task('sasscompil', function () {
         gutil.log(gutil.colors.red(error.message));
         this.emit('end');
     }))
-            .pipe(plugins.sourcemaps.init()) // Start Sourcemaps
+            .pipe(plugins.sourcemaps.init()) // Création du sourcemaps
             .pipe(plugins.sass({
                 noCache: true,
                 outputStyle: 'compressed',
@@ -191,7 +191,7 @@ gulp.task('browser-sync', function() {
 browserSync.init({
         //changer l'adresse du site pour lequel utiliser browserSync, solution par variable fonctionne pas
 //        proxy: '.urlSite.',
-        proxy: 'http://d8-celony.vmdev/',
+        proxy: 'http://d8-gasquet.vmdev/',
         open: false,
         logLevel: 'info',//pour avoir toutes les infos ,utiliser "debug", pour infos de base "info"
         logConnections: true
