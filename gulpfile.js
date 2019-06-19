@@ -83,7 +83,8 @@ var autoprefixer = require('autoprefixer');
 
 
 // Autoprefixer : Navigateurs à cibler pour le préfixage CSS
-var AUTOPREFIXER = [
+// Liste fourni depuis 06/19 par .browserslistrc - Editer pour modifier.
+/*var AUTOPREFIXER = [
 
 '> 1%',
 'ie >= 8',
@@ -96,13 +97,14 @@ var AUTOPREFIXER = [
 'ios >= 7',
 'android >= 4',
 'bb >= 10'
-];
+];*/
 
 //Tableau pour utiliser les plugins de PostCSS
 //https://webdesign.tutsplus.com/tutorials/postcss-quickstart-guide-gulp-setup--cms-24543
 var processors = [
   autoprefixer(  {
-                                browsers: AUTOPREFIXER,
+                                //browsers: AUTOPREFIXER,
+                                // browserslist fourni la liste des navigateurs
                                 cascade: false,
                                 //activation du prefixage pour grid
                                 grid: true
@@ -155,7 +157,7 @@ gulp.task('sasscompil', function () {
                         folderPaths.styles.src
                         )
             }).on('error', plugins.sass.logError))
-           .pipe(postcss(processors))//Utilisation des plugins de PostCSS dont Autoprefixer
+           .pipe(postcss(processors))//Utilisation des plugins de PostCSS dont Autoprefixer (Voir plus haut)
             .pipe(plugins.sourcemaps.write('.', {sourceRoot: folderPaths.styles.src}))//Pour créer le fichier css.map à coté du css
             .pipe(gulp.dest(basePaths.dest))
             .pipe(plugins.size({title: 'Taille du fichier css'}))
