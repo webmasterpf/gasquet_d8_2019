@@ -121,7 +121,7 @@ h1.titre_overlay {
 h1.titre_page {
   @include titre-page;
   color: $blanc-casse;
-  @include backgroundRGBA($vert, 0.9);
+  @include backgroundRGBA($rose-fushia, 0.9);
 }
 /*¤¤¤ STYLES COMMUNS ¤¤¤*/
 //Permet de créer facilement les styles communs à des IDs ou/et classes
@@ -140,7 +140,7 @@ h1.titre_page {
 
       u {
         font-weight: bold;
-        color: $vert;
+        color: $rose-fushia;
       }
 
       h2 {
@@ -150,7 +150,7 @@ h1.titre_page {
 
       h3 {
         @include font-size(m); //utilisation de typey
-        color: $vert;
+        color: $rose-fushia;
       }
 
       a {
@@ -163,7 +163,7 @@ h1.titre_page {
       }
 
       strong {
-        color: $vert;
+        color: $rose-fushia;
       }
     }
   }
@@ -198,10 +198,11 @@ ______________________________*/
   }
 
   div.content {
+    padding: span(0.2);
     .entrefilet {
       @include backgroundImage('bg-merci.gif');
       display: block;
-      color: $orange-fonce;
+      color: $rose-fushia;
       @include font-size(l); //utilisation de typey
       text-transform: capitalize;
       font-weight: bold;
@@ -233,49 +234,23 @@ ______________________________*/
       padding: 0;
     }
 
-    iframe,
-    object {
-      border: em(2px) solid $violet;
-      margin: span(0.2);
-      @include img-centered;
-      max-width: 95%;
-      @include breakpoint ($desktop) {
-        //permet affichage complet de l'iframe
-        position: relative;
-        top: 0;
-        left: 0;
-        max-width: 100%;
-        max-height: 100%;
-      }
-    }
   }
 
-  #video_lycee {
-    width: 95%;
-    margin: em(15px) auto;
-    @include breakpoint ($desktop) {
-      position: relative;
-      padding-bottom: 56.25%;
-      padding-top: em(35px);
-      height: 0;
-      overflow: initial;
+  .videos {
+    ul{
+      list-style: none;
+    }
+    iframe{
+      @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)) {
+      max-height: 85vh;
+      max-width: 60vw;
+      margin: 0 auto;
+      padding: span(0.02);
+      border: em(3px) solid $rose-fushia;
+    }
+    }
     }
 
-    iframe,
-    object {
-      border: em(2px) solid $violet;
-      padding: em(1px);
-      @include img-centered;
-      max-width: 95%;
-      @include breakpoint ($desktop) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
 }
 /*######-------- ZONE 2 --------######*/
 #zone-2.type-contenu-cdi,
@@ -291,7 +266,7 @@ ______________________________*/
   }
 
   h2 {
-    color: $vert;
+    color: $rose-fushia;
     padding: em(5px);
   }
 
@@ -325,7 +300,7 @@ ______________________________*/
 
     &:hover {
       color: white;
-      background: $violet;
+      background: $rose-fushia;
     }
   }
 
@@ -377,15 +352,15 @@ ______________________________*/
         //padding: span(0.01);
       }
 
-      a {
+      a { //liens blocs docs utiles
         background: $gris-clair;
         color: $violet;
         text-decoration: none;
         padding: span(0.01) span(0.03);
 
         &:hover {
-          color: $gris-anthracite;
-          background: $vert;
+          color: $blanc-casse;
+          background: $rose-fushia;
         }
       }
 
@@ -395,7 +370,7 @@ ______________________________*/
           background-size: contain;
           content: "";
           position: relative;
-          vertical-align: sub;
+          rose-fushiaical-align: sub;
           padding: em(10px);
           margin: em(3px);
           transition: 0.5s all;
@@ -415,7 +390,7 @@ ______________________________*/
           background-size: contain;
           content: "";
           position: relative;
-          vertical-align: sub;
+          rose-fushiaical-align: sub;
           padding: em(10px);
           margin: em(3px);
           transition: 0.5s all;
