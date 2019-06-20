@@ -72,8 +72,8 @@ $zonesimg: zone-illustration;
     }
   }
 }
-$typedecontenu: type-page-europe, type-page-sorties-actions, type-page-partenaires;
-$zones: zone-1, zone-2, zone-3;
+$typedecontenu: type-page-europe, type-page-sorties-actions, type-page-partenaires ;
+$zones: zone-1, zone-2, zone-3 ;
 @each $zone in $zones {
   @each $type in $typedecontenu {
     ##{$zone}.#{$type} {
