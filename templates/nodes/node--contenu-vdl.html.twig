@@ -99,11 +99,11 @@ Permet d'ajouter des classes dynamiques ou non aux éléments du markup
   <!--______________ ILLUSTRATION et TITRE ________________ -->
   <div {{ imagecontainer_attribute.addClass(imagecontainer_classes).setAttribute('id', 'zone-illustration') }}>
 
-    {% set image_deco = content.field_illus_vdl | render | trim %}
+    {% set image_deco = content.field_illustration_vdl | render | trim %}
     {% if image_deco or node.label is not empty %}
       <div {{image_attribute.setAttribute('id', 'illustration-pleinepage').addClass(image_classes) }}>
         <h1 {{ titre_attribute.addClass(titre_classes) }}>{{node.label}}</h1>
-        {{ content.field_illus_vdl.0}}
+        {{ content.field_illustration_vdl.0}}
       </div>
     {% endif %}
   </div>
@@ -118,9 +118,9 @@ Permet d'ajouter des classes dynamiques ou non aux éléments du markup
 
       {{ content.body }}
 
-      {% include directory ~ '/includes/dedicates_inc/inc_videos_embed.html.twig' %}
+      {# % include directory ~ '/includes/dedicates_inc/inc_videos_embed.html.twig' % #}
 
-      {% include directory ~ '/includes/regions_inc/inc_region_zone_1.html.twig' %}
+      {# % include directory ~ '/includes/regions_inc/inc_region_zone_1.html.twig' % #}
 
     </div>
     <!-- /.content -->
@@ -130,9 +130,9 @@ Permet d'ajouter des classes dynamiques ou non aux éléments du markup
   <!--______________ZONE 2________________ -->
   <div {{ zone2_attribute.addClass(zone2_classes).setAttribute('id', 'zone-2') }}>
 
-    {% if node.field_inserer_liste is not empty %}
+    {% if node.field_inserer_liste_viewfield is not empty %}
       <aside {{ vuebloc_attribute.addClass(vuebloc_classes) }}>
-        {{ content.field_inserer_liste.0 }}
+        {{ content.field_inserer_liste_viewfield.0 }}
       </aside>
     {% endif %}
 
