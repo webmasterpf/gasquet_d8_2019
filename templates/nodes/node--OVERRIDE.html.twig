@@ -58,7 +58,7 @@ Créer un template de champ pour pouvoir organiser la sortie HTML : field--field
     {# Plutôt utiliser l'objet node que content car il n'est pas soumis au type de sortie d'affichage #}
     {{ node.field_name|field_label }}
 
-    {# Affichage du contenu des balises titre ou alt d'une image #}
+    {# Affichage du contenu des balises titre ou alt d'un champ image #}
     {{ node.field_image.title }}
     {{ node.field_image.alt }}
     {{ node.field_link.uri }}
@@ -123,7 +123,7 @@ Créer un template de champ pour pouvoir organiser la sortie HTML : field--field
     {% if tid %}
       {{ drupal_field('field_desired_field', 'taxonomy_term', tid) }}
     {% endif %}
-    Terme de taxonomie avec son lien
+    Terme de taxonomie avec son lien - Champ texte simple
     {{ content.field_NAME.0 }}
     Terme de taxonomie sans son lien: le terme brut
     {{ content.field_NAME.0['#title'] }}

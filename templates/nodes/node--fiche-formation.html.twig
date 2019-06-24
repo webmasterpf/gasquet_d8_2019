@@ -20,7 +20,7 @@ Permet d'ajouter des classes dynamiques ou non aux éléments du markup
 ]%}
 {% set taxo_classes = [
 'terme-pole',
-'terme-' ~ content.field_pole_formation[0]['#title']|clean_class | replace({"^" : ""}),
+'terme-' ~ content.field_filiere_de_formation[0]['#title']|clean_class | replace({"^" : ""}),
 ]%}
 {% set image_classes = [
 'illustration-'~ node.bundle|clean_class,
@@ -93,11 +93,11 @@ Permet d'ajouter des classes dynamiques ou non aux éléments du markup
   <!--______________ ILLUSTRATION et TITRE ________________ -->
   <div {{ imagecontainer_attribute.addClass(imagecontainer_classes).setAttribute('id', 'zone-diaporama') }}>
 
-    {% set image_deco = content.field_illustration_contenu_diapo | render | trim %}
+    {% set image_deco = content.field_deco_ficheform | render | trim %}
     {% if image_deco or node.label is not empty %}
       <div {{image_attribute.setAttribute('id', 'illustration-pleinepage').addClass(image_classes) }}>
         <h1 {{ titre_attribute.addClass(titre_classes) }}>{{node.label}}</h1>
-        {{ content.field_illustration_contenu_diapo.0}}
+        {{ content.field_deco_ficheform.0}}
       </div>
     {% endif %}
   </div>
@@ -109,12 +109,13 @@ Permet d'ajouter des classes dynamiques ou non aux éléments du markup
     #}
     <span {{ taxo_attribute.addClass(taxo_classes) }}>
 
-      {{ content.field_pole_formation.0['#title'] }}
+      {{ content.field_filiere_de_formation.0['#title'] }}
     </span>
 
     <div{{ content_attributes.addclass('content') }}>
 
       {{ content.body }}
+      {{ content.field_contenu_suite_ficheform.0}}
     </div>
     <!-- /.content -->
   </div>
@@ -130,7 +131,7 @@ Permet d'ajouter des classes dynamiques ou non aux éléments du markup
 
   <!--______________ ZONE 3 ________________ -->
   <div {{ zone3_attribute.addClass(zone3_classes).setAttribute('id', 'zone-3') }}>
-    {% include directory ~ '/includes/dedicates_inc/inc_ficheform_complement_actu.html.twig' %}
+    {# % include directory ~ '/includes/dedicates_inc/inc_ficheform_complement_actu.html.twig' % #}
 
     {% if content.links %}
       <div class="links">
