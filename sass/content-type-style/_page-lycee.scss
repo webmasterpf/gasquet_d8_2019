@@ -58,7 +58,7 @@ article.middle-content {
   //Empêche les flottants de sortir du conteneur
   @include clearfixsusy3;
 }
-$typedecontenu: type-page-lycee,type-contenu-cdi;
+$typedecontenu: type-page-lycee,type-page-erreur;
 $zonesimg: zone-illustration;
 @each $zone in $zonesimg {
   @each $type in $typedecontenu {
@@ -68,6 +68,7 @@ $zonesimg: zone-illustration;
         max-height: 90vw;
         overflow: hidden;
         position: relative;
+        // Pour image défaut en BG, voir style différencié ci-après
 
         img {
           transform: translate(0%,0%);
@@ -85,8 +86,15 @@ $zonesimg: zone-illustration;
     }
   }
 }
-$typedecontenu: type-page-lycee,type-contenu-cdi;
-$zones: zone-1, zone-2, zone-3;
+#zone-illustration.type-page-erreur{
+  #illustration-pleinepage{
+    //image par défaut en BG comme secours
+    @include backgroundImage(("defaut/visuel-848-AssoPF-2019.jpg"),transparent,no-repeat, top left);
+    background-size: cover;
+  }
+}
+$typedecontenu: type-page-lycee,type-page-erreur ;
+$zones: zone-1, zone-2, zone-3 ;
 @each $zone in $zones {
   @each $type in $typedecontenu {
     ##{$zone}.#{$type} {}
@@ -105,17 +113,16 @@ body .conteneur {
   }
 }
 /*######-------- ||| STYLE ||| --------######*/
-h1.title-classes,
-h1.titre-lycee {
-  font-size: em(24px);
-  color: $violet;
-  line-height: 1.0em;
-}
+
 /*---- REGLAGE GLOBAL - supprimer autres réglages si existent - retirer le bloc dédié de l'affichage pour ne pas doublonner'*/
 //Commun pour tous les H1 titre du site -
 
 h1.titre_overlay {
   @include titre_overlay();
+  @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
+  top: em(7px);
+  left:em(5px);
+  }
 }
 
 h1.titre_page {
@@ -125,7 +132,7 @@ h1.titre_page {
 }
 /*¤¤¤ STYLES COMMUNS ¤¤¤*/
 //Permet de créer facilement les styles communs à des IDs ou/et classes
-// !! Le tableau type de contenu est repris du layout spécifique, idem pour les zones
+// !! Le tableau type de contenu est repris du layout spécifique, idem pour les zones(L88-92)
 @each $zone in $zones {
   @each $type in $typedecontenu {
     ##{$zone}.#{$type} {
@@ -172,8 +179,9 @@ h1.titre_page {
         ¤¤¤ STYLES PROPRES ¤¤¤
 ______________________________*/
 
-#zone-1.type-contenu-cdi,
-#zone-1.type-page-lycee {
+@each $zone in $zones {
+  @each $type in $typedecontenu {
+    ##{$zone}.#{$type} {
   h2 {}
 
   h3 {}
@@ -250,7 +258,8 @@ ______________________________*/
     }
     }
     }
-
+}
+}
 }
 /*######-------- ZONE 2 --------######*/
 #zone-2.type-contenu-cdi,
