@@ -93,6 +93,7 @@ $zonesimg: zone-illustration;
     background-size: cover;
   }
 }
+// Tableau initial des classes et IDs à créer.
 $typedecontenu: type-page-lycee,type-page-erreur ;
 $zones: zone-1, zone-2, zone-3 ;
 @each $zone in $zones {

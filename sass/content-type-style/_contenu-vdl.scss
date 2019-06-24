@@ -128,7 +128,7 @@ $zones: zone-1, zone-2, zone-3 ;
           max-width: 60vw;
           margin: 0 auto;
           padding: span(0.02);
-          border: em(3px) solid $vert;
+          border: em(3px) solid $violet;
         }
         }
       }
@@ -179,7 +179,7 @@ $zones: zone-1, zone-2, zone-3 ;
 
       u {
         font-weight: bold;
-        color: $vert;
+        color: $violet;
       }
 
       h2 {
@@ -189,7 +189,7 @@ $zones: zone-1, zone-2, zone-3 ;
 
       h3 {
         @include font-size(m); //utilisation de typey
-        color: $vert;
+        color: $violet;
       }
 
       a {
@@ -202,7 +202,7 @@ $zones: zone-1, zone-2, zone-3 ;
       }
 
       strong {
-        color: $vert;
+        color: $violet;
       }
     }
   }
@@ -335,7 +335,7 @@ $zones: zone-1, zone-2, zone-3;
 
         a {
           background: $gris-clair;
-          @include rollover-effect($vert); //Effet rollover CSS3
+          @include rollover-effect($violet); //Effet rollover CSS3
         }
 
         h2 {
