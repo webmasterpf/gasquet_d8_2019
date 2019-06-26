@@ -1,7 +1,7 @@
 /*
  * Pour pouvoir utiliser plusieurs versions de Jquery : https://www.drupal.org/node/1058168
  * Utiliser jQuery normalement.
- * Trés bonne explication sur action du noConflict() : 
+ * Trés bonne explication sur action du noConflict() :
  * http://sundropsoftware.com/how-to-use-jquery-noconflict-the-right-way/
  */
 
@@ -158,8 +158,8 @@
     jQuery(document).ready(function () {
         $(".lightSlider").lightSlider();
     });
-    
-    // StickUp pour barre de partage social 
+
+    // StickUp pour barre de partage social
 //    jQuery(window).load(function () {
 //    console.log('Chargement de StickUp.js pour jQuery>=1.11');
 //$('.service-links').stickUp();
@@ -195,7 +195,7 @@ $('#block-service_links-service_links').floatit({
 //  fade: true,
 //  cssEase: 'linear'
 //});
-//}); 
+//});
 //
 ////Pour utiliser Slick avec une nav par miniatures (thumbs)
 //jQuery(document).ready(function ()
@@ -215,11 +215,11 @@ $('#block-service_links-service_links').floatit({
 //  centerMode: true,
 //  focusOnSelect: true
 //});
-//}); 
+//});
 
 //// Script pour Masonry - Views casse les __ utiliser -- plutôt
 
-//    jQuery(document).ready(function () 
+//    jQuery(document).ready(function ()
     jQuery(window).on('load', function ()
     {
         console.log('Chargement des paramètres Masonry.js');
@@ -249,14 +249,14 @@ $('#block-service_links-service_links').floatit({
 //// Script pour Wookmark (liste html)
 //jQuery(document).ready(function ()
 //{
-//  console.log('Chargement des paramètres Wookmark.js');   
+//  console.log('Chargement des paramètres Wookmark.js');
 //$('#wookmark-id li').wookmark({
 //            autoResize: true, // This will auto-update the layout when the browser window is resized.
 //            container: $('#tiles'), // Optional, used for some extra CSS styling
 //            offset: 2, // Optional, the distance between grid items
 //            itemWidth: 210 // Optional, the width of a grid item
 //        });
-// 
+//
 // window.onresize = function(event) {
 //     $('#wookmark-id li').wookmark({offset: 2});
 // }
@@ -281,10 +281,10 @@ $('#block-service_links-service_links').floatit({
 //Action sur taille des images : retrait de toutes les tailles en dur (HTML) de manière ciblée
         //$('img').each(function(){
         console.log('Nettoyage sur divers éléments : objets,iframe,....');
-        
-     
-  
-  
+
+
+
+
         $('.fiche-formation img').each(function () {
             $(this).removeAttr('width');
             $(this).removeAttr('height');
@@ -296,7 +296,8 @@ $('#block-service_links-service_links').floatit({
 //Changer la casse des titres H1 qui sont en Majuscules
         $('h1').css('text-transform', 'capitalize');
 //        $('.liste-vdl-lycee .titre-vdl a').css('text-transform', 'lowercase');
-        $('#liste-vdl span.titre-vdl > a').css('text-transform', 'lowercase');
+        $('#zone-1 .liste-vdl-lycee span.titre-vdl > a').css('text-transform', 'uppercase');
+        $('#zone-1 .liste-vdl-lycee span.titre-vdl').css('text-transform', 'uppercase');
 
 //Retirer les style en ligne issus de copier/coller
         $("#zone-2 span").removeAttr("style");
@@ -304,13 +305,13 @@ $('#block-service_links-service_links').floatit({
         $("#zone-2 ul").removeAttr("style");
         $(".masonry-brick").removeAttr("style");//pas d'effet
         $("img.filefield-icon").removeAttr("style");
-        
+
 
         //Retrait du style des objets imbriqués comme object,iframe,etc...
         $("#media-youtube-default-external-object-1").removeAttr("style");
         $("#media-youtube-1").remove();
-        
-        
+
+
         //Reset des attributs de l'iframe puis réglage des nouvelles valeurs des attributs, alignement avec plugin JQuery
         $(".acces_rubriques iframe").each(function () {
             $(this).removeAttr('width');
@@ -343,7 +344,7 @@ $('#block-service_links-service_links').floatit({
         $(".nav-espace-partenaire li img").removeAttr("style");
 
 
-        //Retrait position:absolute sur le Views Slideshow       
+        //Retrait position:absolute sur le Views Slideshow
         $('.views_slideshow_cycle_slide:visible').css('position', 'relative', 'important');
         $('.views_slideshow_cycle_slide').not(':visible').css('position', 'absolute', 'important');
 
@@ -363,7 +364,7 @@ $('#block-service_links-service_links').floatit({
   console.log( $( this ).text() );
 });
 
-    //Views Slideshow Cycle RWD    
+    //Views Slideshow Cycle RWD
 
     $(window).resize(function () {
         $('.views_slideshow_cycle_main').each(function () {
@@ -409,26 +410,26 @@ $('#block-service_links-service_links').floatit({
             $('.mid-menu').toggleClass('mid-animate');
             $('.bottom-menu').toggleClass('bottom-animate');
         });
-        
+
         //Cache / Affiche les enfants dans le menu overlay - Pas fonctionnel
 $('#block-menu-menu-menu-general').click(function() {
   $('.collapsed').toggle( "slow", function() {
     // Animation complete.
   });
 });
-        
+
 //deplacement du code pour vimeo
 
-        
-        
+
+
     });
-    
+
     //Retrait de l'autoplay des videos Vimeo
 //https://stackoverflow.com/questions/49053072/change-part-of-src-attribute-of-iframe-with-jquery
 //
 //  var oldSrc = $("#media-vimeo-1 iframe").attr("src"); //Get the src of the iframe
 //  var newSrc = oldSrc.replace("autoplay=1", "autoplay=0"); //Replace "autoplay=1" by "autoplay=0"
-//  
+//
 //  $("#media-vimeo-1 iframe").attr("src", newSrc); //Change the src attr to the new value
 //    console.log("Retrait de l'autoplay de Vimeo: ");
 //  console.log("Old Src: " + oldSrc);
