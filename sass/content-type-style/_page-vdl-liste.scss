@@ -92,7 +92,7 @@ $zones: zone-1 ; //, zone-2, zone-3
   /*                                        column-count: 5;
                                           column-fill: auto;
                                           white-space: normal;*/
-                      //Flex pour avoir classement horizontal
+                      //Flex pour avoir classement horizontal chronologique
                       display: flex;
                       flex-wrap:wrap;
                       padding: 0 0 0 span(0.1);
@@ -184,7 +184,7 @@ ______________________________*/
         //Style du filtrage de la vue
         .bef-exposed-form{
             div.form-item{
-                background: $vert;
+                background: $rose-fushia;
                 color: $blanc-casse;
                 text-align: center;
                 cursor: pointer;
@@ -197,9 +197,13 @@ ______________________________*/
                                                 font-family: $FontRaleway;*/
                     }
                 }
-                &:hover:not(#edit-term-node-tid-depth-limited-All-wrapper){
+                //&:hover:not(#edit-term-node-tid-depth-limited-All-wrapper),
+                // Exclusion du hover pour le choix Tout - Fonctionnel
+                &:hover:not(:first-child)
 
-                    @include backgroundImage(('BG/BG_Filtres_Exposes.png'), transparent, center -0.5em , no-repeat );
+                {
+
+                    @include backgroundImage(('BG/BG_Filtres_Exposes.png'), transparent, center -4vw , no-repeat );
                     background-size:60%;
                     background-color: $violet;
                     label{

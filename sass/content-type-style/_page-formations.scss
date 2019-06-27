@@ -166,7 +166,10 @@ ______________________________*/
                         font-family: $FontRaleway;*/
                     }
                 }
-                &:hover:not(#edit-term-node-tid-depth-limited-All-wrapper){
+                //&:hover:not(#edit-term-node-tid-depth-limited-All-wrapper)
+                // Exclusion du hover pour le choix Tout - Fonctionnel
+                &:hover:not(:first-child)
+                {
                   //Utilisation de l'unité vw plus universelle, évite usage de BP
                   @include backgroundImage(('BG/BG_Filtres_Exposes.png'), transparent, center -14vw , no-repeat );
                   background-size:60%;
