@@ -51,10 +51,22 @@ Permet d'ajouter des classes dynamiques ou non aux éléments du markup
 'zone2_layout_6_6',
 'type-' ~ node.bundle|clean_class
 ]%}
-{% set vuebloc_classes = [
-'liste-vdl',
+{# Classes conditionnelles selon l'URL pour utiliser le même templates avec des classes différentes #}
+
+{% if 'les-actualites' in url|render|render %}
+  {# % if '18' in node.id|render|render % #}
+
+  {% set vuebloc_classes = [
+'liste-actu-presse',
 'type-' ~ node.bundle|clean_class
 ]%}
+{% else %}
+  {% set vuebloc_classes = [
+'liste-vdl',
+  'type-' ~ node.bundle|clean_class
+  ]%}
+{% endif %}
+
 {# BEM inspired class syntax: https://en.bem.info/
    Enable this code if you would like node classes like "article article--layout-teaser", where article is the content type and teaser is the view mode.
 {% set classes = classes|merge([
