@@ -167,13 +167,15 @@ ______________________________*/
                     }
                 }
                 &:hover:not(#edit-term-node-tid-depth-limited-All-wrapper){
+                  //Utilisation de l'unité vw plus universelle, évite usage de BP
+                  @include backgroundImage(('BG/BG_Filtres_Exposes.png'), transparent, center -14vw , no-repeat );
+                  background-size:60%;
+                  background-color: $violet;
 
-                    @include backgroundImage(('BG/BG_Filtres_Exposes.png'), transparent, center -8.5em , no-repeat );
-                    background-size:60%;
-                    background-color: $violet;
-                    label{
-                        @include opacity(0.45);
-                    }
+
+                  label{
+                      @include opacity(0.45);
+                  }
                 }
             }
         }
