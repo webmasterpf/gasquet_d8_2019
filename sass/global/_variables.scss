@@ -114,8 +114,9 @@ $desktopcol: susy-repeat(12);
 /*¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 ----- VARIABLES PROVENCE FORMATION -----
 ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
-
-
+// Nom du thème pour les ID des blocs avec D8 - Donne un ID du type
+// #block-#{$theme}-local-tasks comme pour le BO
+$theme:gasquet-d8-2019;
 
 /*-------- Couleurs charte graphique PF ----*/
 $vert : #ADC91F;
