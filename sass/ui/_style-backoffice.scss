@@ -71,7 +71,7 @@ body.not-front.logged-in, body.role--authenticated{
 /*-- EDIT MODE --D8 --*/
 // Tabs.
 body.role--authenticated{
-ul.menu,nav.tabs{
+ul.menu,nav.tabs,#block-gasquet-d8-2019-local-tasks{
     @include backgroundImage(('BG/bg_nav_backoffice.gif'),transparent,0 0, repeat);
 
     padding:em(5px);
@@ -95,7 +95,7 @@ ul.menu,nav.tabs{
     text-decoration: none;
     &:hover{
         color: $gris-clair;
-        background: $vert;
+        background: $rose-fushia;
     }
   }
 }
