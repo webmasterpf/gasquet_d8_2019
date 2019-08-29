@@ -86,7 +86,7 @@ body .conteneur{
             padding: 0;
             @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
                 column-count: 4;//adapter selon taille des blocs / images
-                column-fill: auto;
+                column-fill: balance;//bug FF en colonne résolu
                 white-space: normal;
                 padding: span(0.1);
             }
