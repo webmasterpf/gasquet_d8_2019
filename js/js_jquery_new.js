@@ -436,7 +436,8 @@ $('#block-menu-menu-menu-general').click(function() {
 //  console.log("New Src: " + newSrc);
 
 //  Utilisation du Lazyload pour les éléments contenus dans certains conteneurs
-    $('.conteneur').find('img').lazyLoadXT();
-    $('.conteneur').find('iframe').lazyLoadXT();
+//Possible problème avec FF et les SVG 
+    //$('.conteneur').find('img').lazyLoadXT();
+    //$('.conteneur').find('iframe').lazyLoadXT();
 
 })(jQuery);

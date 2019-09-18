@@ -324,6 +324,7 @@ ______________________________*/
                     img {
                          @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
                         transform: translate(0%) scale(1.4);//Position de l'image d'illustration
+                        max-height: 50vh;//limite hauteur image pour mise en page
                          }
                     }
                     a {//uniquement les "a" sur l'image
@@ -345,12 +346,6 @@ ______________________________*/
 #zone-2.type-page-actualites{
 
 }
-
-
-
-
-
-
 #zone-3.type-page-actualites{
 
 }
