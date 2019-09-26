@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - starterpf_d8_2019
-id: starterpf_d8_2019_page_title
-theme: starterpf_d8_2019
+    - gasquet_d8_2019
+id: gasquet_d8_2019_page_title
+theme: gasquet_d8_2019
 region: content
 weight: -50
 provider: null
