@@ -330,12 +330,16 @@ $zones: zone-1, zone-2, zone-3;
   @each $type in $typedecontenu {
     ##{$zone}.#{$type} {
       #region-zone-3 {
-        @include backgroundImage(("BG/stripe_vert_vert_pastel.png"),transparent,repeat, top left);
+        @include backgroundImage(("BG/stripe_rose_violet_pastel.png"),transparent,repeat, top left);
         @include arrondis(1em);
 
         a {
           background: $gris-clair;
+          color: $rose-fushia;
           @include rollover-effect($violet); //Effet rollover CSS3
+          :hover{
+            color: $gris-clair;
+          }
         }
 
         h2 {

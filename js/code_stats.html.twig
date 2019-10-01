@@ -1,11 +1,10 @@
-<h2>Changer les codes stats</h2>
 <!--  ######## CODE STATS OK !!!!!!!!!!!!-->
 <!-- code XITI  -->
 <div id="xiti-logo" style="visibility: hidden;">
 <script type="text/javascript">
 <!--
-document.write('<a href="https://www.xiti.com/xiti.asp?s=xxxx" title="WebAnalytics">');
-Xt_param = 's=xxxx&p=<?php echo $head_title; ?>';
+document.write('<a href="https://www.xiti.com/xiti.asp?s=500654" title="WebAnalytics">');
+Xt_param = 's=500654&p=<?php echo $head_title; ?>';
 try {Xt_r = top.document.referrer;}
 catch(e) {Xt_r = document.referrer; }
 Xt_h = new Date();
@@ -19,22 +18,49 @@ document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'"></a
 </script>
 <noscript>
 <div id="xiti-logo-noscript">
-<a href="https://www.xiti.com/xiti.asp?s=xxx" title="WebAnalytics" >WebAnalytics solution by <img width="39" height="25" src="https://logv11.xiti.com/hit.xiti?s=471342&amp;p=<?php echo $url; ?>&amp;" alt="WebAnalytics" /></a>
+<a href="https://www.xiti.com/xiti.asp?s=xxx" title="WebAnalytics" >WebAnalytics solution by <img width="39" height="25" src="https://logv11.xiti.com/hit.xiti?s=500654&amp;p=<?php echo $url; ?>&amp;" alt="WebAnalytics" /></a>
 </div>
 </noscript>
 </div>
-
-<!-- Start Quantcast tag -->
-
-<!--<script type="text/javascript">
-_qoptions={
-qacct:"xxxx"
-};
+<!-- Start of Woopra Code -->
+<script type="text/javascript">
+function woopraReady(tracker) {
+    tracker.setDomain('lycee-marie-gasquet.eu');
+    tracker.setIdleTimeout(1800000);
+    tracker.track();
+    return false;
+}
+(function() {
+    var wsc = document.createElement('script');
+    wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+    wsc.type = 'text/javascript';
+    wsc.async = true;
+    var ssc = document.getElementsByTagName('script')[0];
+    ssc.parentNode.insertBefore(wsc, ssc);
+})();
 </script>
-<script type="text/javascript" src="https://edge.quantserve.com/quant.js"></script>
+<!-- End of Woopra Code -->
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "https://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-behZUd_cXqsz-"
+});
+</script>
+
 <noscript>
-<img src="https://pixel.quantserve.com/pixel/p-behZUd_cXqsz-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
-</noscript>-->
-
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-behZUd_cXqsz-.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
 <!-- End Quantcast tag -->
-

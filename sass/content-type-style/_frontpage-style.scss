@@ -575,7 +575,7 @@ body .conteneur {
                             }
                             &:hover{
 
-                                /*        @include backgroundImage("SVG/bg_acces_contact.svg", -29em top);*/
+                                /*@include backgroundImage("SVG/bg_acces_contact.svg", -29em top);*/
                                 /*background: $violet;//Couleur de fond des boutons au rollover - Surpasse couleur donnée dans mixin backgroundImage, empêche image*/
                                 text-indent: em(-9000px);
                             }
