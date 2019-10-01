@@ -89,7 +89,7 @@ $zonesimg: zone-illustration;
 #zone-illustration.type-page-erreur{
   #illustration-pleinepage{
     //image par défaut en BG comme secours
-    @include backgroundImage(("defaut/visuel-848-AssoPF-2019.jpg"),transparent,no-repeat, top left);
+    @include backgroundImage(("defaut/visuel-defaut-AssoPF-2019.jpg"),transparent,no-repeat, top left);
     background-size: cover;
   }
 }
