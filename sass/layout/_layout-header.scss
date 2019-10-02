@@ -33,7 +33,8 @@ body .conteneur #header {
                     margin: 0;
                     padding: 0;
                     //display: block;//commenter si logo pas collé à gauche
-                    max-height: 15em;//si logo trop gros
+                    //max-height: 15em;//si logo trop gros - pour SVG
+                    max-height: 7em;//si logo trop gros - pour PNG
                     object-fit: contain;
                     transform: scale(0.75);
                 }
