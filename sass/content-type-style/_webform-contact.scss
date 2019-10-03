@@ -158,13 +158,17 @@ ______________________________*/
         @include img-centered;
         max-width: 65%;
         @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
+
             position: relative;
             top:0;
             left: 0;
-            width: 100vw;//Pas de % pour les iframes px ou vh vw
-            height: 100vh;
+
             max-width: 95%;
             padding: span(0.02);
+              iframe :not(iframe[src*="maps"]):not(iframe[src*="umap"]){
+                width: 100vw;//Pas de % pour les iframes px ou vh vw - plan exclu
+                height: 100vh;
+              }
         }
     }
 }
