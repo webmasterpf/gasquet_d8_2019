@@ -137,7 +137,7 @@ $zones: zone-1 ; //, zone-2, zone-3
                   @include txt-colonnes();
                   @include hack-Edge;
                   @include hack-IE;
-
+                  display: flow-root;
                   span.illus-lycee {
                     overflow: hidden;
 
@@ -159,7 +159,7 @@ $zones: zone-1 ; //, zone-2, zone-3
                       max-width: 7vw;
                     }
                     @include breakpoint($desktopwide) {
-                      max-width: 11vw;
+                      max-width: 10vw;
                       padding: 0 0 0 span(0.01);
                     }
                   }
@@ -391,7 +391,7 @@ ______________________________*/
             //Style général des éléments
             li {
               list-style: none;
-              background: $vert;
+              background: $rose-fushia;
               @include txt-cesure();
 
               a {
