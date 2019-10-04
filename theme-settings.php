@@ -16,6 +16,7 @@ $theme_name = \Drupal::theme()->getActiveTheme()->getName();
  * Form override for theme settings.
  */
 function gasquet_d8_2019_form_system_theme_settings_alter(array &$form, FormStateInterface $form_state) {
+  /*
   $form['options_settings'] = [
     '#type' => 'fieldset',
     '#title' => t('Theme Specific Settings'),
@@ -79,5 +80,7 @@ function gasquet_d8_2019_form_system_theme_settings_alter(array &$form, FormStat
       'ie9' => t('Internet Explorer 9'),
     ],
     '#default_value' => array_keys(array_filter(theme_get_setting('ie_enabled_versions'))) ?: [],
-  ];
+  ];  */
+
+
 }
