@@ -45,7 +45,9 @@
 
               <div class="logoHead">
                 {% if page.logo is not empty %}
-                  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/></a>
+                  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo">
+                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+                  </a>
                 {% endif %}
               </div>
 
