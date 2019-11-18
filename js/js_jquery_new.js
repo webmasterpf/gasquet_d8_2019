@@ -404,7 +404,9 @@ $('#block-service_links-service_links').floatit({
 
     //Menu Pleine Page Overlay
     $(document).ready(function () {
+		
         $(".icon").click(function () {
+			console.log('Chargement de Menu Pleine Page sur .icon');
             $('.mobilenav').fadeToggle(500);
             $('.top-menu').toggleClass('top-animate');
             $('.mid-menu').toggleClass('mid-animate');
