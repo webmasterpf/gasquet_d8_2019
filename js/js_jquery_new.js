@@ -404,9 +404,9 @@ $('#block-service_links-service_links').floatit({
 
     //Menu Pleine Page Overlay
     $(document).ready(function () {
-		
+		console.log('Chargement de Menu Pleine Page');
         $(".icon").click(function () {
-			console.log('Chargement de Menu Pleine Page sur .icon');
+			console.log('Déclenchement de Menu Pleine Page sur .icon');
             $('.mobilenav').fadeToggle(500);
             $('.top-menu').toggleClass('top-animate');
             $('.mid-menu').toggleClass('mid-animate');
@@ -438,7 +438,7 @@ $('#block-menu-menu-menu-general').click(function() {
 //  console.log("New Src: " + newSrc);
 
 //  Utilisation du Lazyload pour les éléments contenus dans certains conteneurs
-//Possible problème avec FF et les SVG 
+//Possible problème avec FF et les SVG
     //$('.conteneur').find('img').lazyLoadXT();
     //$('.conteneur').find('iframe').lazyLoadXT();
 
