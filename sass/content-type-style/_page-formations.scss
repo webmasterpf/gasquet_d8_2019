@@ -45,11 +45,18 @@ body .conteneur{
             transform: translate(0%,0%);
             @include adaptable-img();
         }
-        @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
+        @include breakpoint(($desktop,$desktopwide)){
             min-height: 25vw;
             max-height: 30vw;
             img{
                 transform: translate(0%,-6%);
+            }
+        }
+        @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)){
+            min-height: 25vw;
+            max-height: 37vw;
+            img{
+                transform: translate(0%,-13%);
             }
         }
     }
