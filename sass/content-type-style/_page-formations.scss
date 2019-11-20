@@ -26,8 +26,7 @@ body .conteneur .conteneur-flex{
 /*######-------- ||| BORDURES ||| --------######*/
 body .conteneur .conteneur-flex,
 body .conteneur{
-    @include breakpoint(($desktop,$tablet)){
-    }
+
 
 }
 
@@ -54,13 +53,12 @@ body .conteneur{
         }
         @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)){
             min-height: 25vw;
-            max-height: 37vw;
+            max-height: 40vw;
             img{
-                transform: translate(0%,-13%);
+                transform: translate(0%,-20%);
             }
         }
     }
-
 }
 #zone-1.type-page-pole{
     >.content{
@@ -73,22 +71,43 @@ body .conteneur{
         }
     }
     aside.liste-formations-initiales{
-        .bef-exposed-form{
-            @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
-                column-count: 4;
-                column-fill: balance;
-                white-space: normal;
-                padding: span(0.02);
-            }
-            div.form-item{
-                margin: 0 0 span(0.01) 0;
-                @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
-                    @include  txt-colonnes();//Pour bug webkit avec box shadow et columns - aléatoire
-
-                    padding: span(0.35);
-                }
-            }
-        }
+      .bef-exposed-form{
+          @include breakpoint(($desktop,$desktopwide)){
+              display:inline-block;
+              column-count: 6;
+              column-fill: balance;
+              white-space: normal;
+              padding: span(0.02);
+          }
+          @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)){
+            //Diminue taille items sur Tablette selon réglage de display
+            //display:inherit;
+            column-count: 1;// Tablette S3: Edge & FF OK
+            column-fill: balance;
+            white-space: normal;
+            padding: span(0.02);
+          }
+          div.form-item{
+              margin: 0 0 span(0.01) 0;
+              @include breakpoint(($desktop,$desktopwide)){
+                @include hack-Edge;
+                @include hack-IE;
+                @include txt-colonnes();
+                padding: span(1);
+              }
+              @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)){
+                @include hack-Edge;
+                @include hack-IE;
+                @include txt-colonnes();
+                //Tri horizontal plutot que vertical des éléments. Besoin d'une largeur
+                // Régler column-count: sur 1 au niveau de l'UL
+                display: inline-block;
+                width: span(5.5);
+                padding: span(0.35);
+                //Garder le margin par défaut
+              }
+          }
+      }
         ul.formations-initiales{
             padding: 0;
             @include breakpoint(($tablet-hd,$tablet)){
@@ -165,7 +184,7 @@ ______________________________*/
         //Style du filtrage de la vue
        .bef-exposed-form{
             div.form-item{
-                  background: $rose-fushia;
+                background: $rose-fushia;
                 color: $blanc-casse;
                 text-align: center;
                 cursor: pointer;
@@ -183,7 +202,7 @@ ______________________________*/
                 &:hover:not(:first-child)
                 {
                   //Utilisation de l'unité vw plus universelle, évite usage de BP
-                  @include backgroundImage(('BG/BG_Filtres_Exposes.png'), transparent, center -14vw , no-repeat );
+                  @include backgroundImage(('BG/BG_Filtres_Exposes.png'), transparent, center -7.5vw , no-repeat );
                   background-size:60%;
                   background-color: $violet;
 
