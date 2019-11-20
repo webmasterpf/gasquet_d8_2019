@@ -68,11 +68,20 @@ $zones: zone-1 ; //, zone-2, zone-3
       aside.liste-vdl,aside.liste-actu-presse{
 
           .bef-exposed-form{
-              @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
-                  column-count: 4;
+              @include breakpoint(($desktop,$desktopwide)){
+                  display:inline-block;
+                  column-count: 6;
                   column-fill: balance;
                   white-space: normal;
                   padding: span(0.02);
+              }
+              @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)){
+                //Diminue taille items sur Tablette selon réglage de display
+                //display:inherit;
+                column-count: 2;// Tablette S3: Edge OK FF ko
+                column-fill: balance;
+                white-space: normal;
+                padding: span(0.02);
               }
               div.form-item{
                   margin: 0 0 span(0.01) 0;
@@ -88,19 +97,35 @@ $zones: zone-1 ; //, zone-2, zone-3
                   /*width: span(12);*/
               }
               ul.liste-vdl-lycee{
-                  @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
+                  @include breakpoint(($desktop,$desktopwide)){
   /*                                        column-count: 5;
                                           column-fill: auto;
                                           white-space: normal;*/
-                      //Flex pour avoir classement horizontal chronologique
+                      //Flex pour avoir classement horizontal chronologique plutot que vertical
                       display: flex;
                       flex-wrap:wrap;
                       padding: 0 0 0 span(0.1);
                   }
+                  @include breakpoint(($tablet-hd,$tablet)){
+                    //Layout différent pour tablette, 2 colonnes
+                    column-count: 1;//adapter selon taille des blocs / images
+                    column-fill: balance;//bug FF en colonne résolu
+                    white-space: normal;
+                    padding: span(0.1);
+
+                  }
+                  @include breakpoint(($mobilelandscape,$tabletlandscape)){
+                    display: flex;
+                    flex-wrap:wrap;
+                    padding: 0;
+                  }
                   li{
                       padding: 0;
                       margin: span(0.1) 0;
-                      @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
+                      :not(img):not(a):not(.complement){
+                          padding: span(0.05);
+                        }
+                      @include breakpoint(($desktop,$desktopwide)){
 
                           /*@include hack-Edge;*/
                           @include hack-IE;
@@ -111,12 +136,34 @@ $zones: zone-1 ; //, zone-2, zone-3
                           margin: 0 span(0.1) span(0.1) 0;
                           display: inline-block;
                           width: span(1.8);
-
                           :not(img):not(a):not(.complement){
                               padding: span(0.1);
+                            }
 
+                      }
+                      @include breakpoint(($mobilelandscape,$tabletlandscape)){
+                        /* Définir le nombre de colonnes via flex*/
+                        flex: 0 0 18%; // 21% = 4 col , 18% = 5 col
+                        @include hack-IE;
+                        @include  txt-colonnes();
+                        margin: 0 span(0.1) span(0.1) 0;
+                        display: inline-block;
+                        //width: span(0.5); //inutile sur tablette S3
+
+                        :not(img):not(a):not(.complement){
+                            padding: span(0.1);
                           }
-
+                      }
+                      @include breakpoint(($tablet-hd,$tablet)){
+                        //Utilisation de colonnes plutot que Flex
+                      @include hack-Edge;
+                      @include hack-IE;
+                      @include txt-colonnes();
+                      margin: span(0.1);
+                      //Tri horizontal plutot que vertical des éléments. Besoin d'une largeur
+                      // Régler column-count: sur 1
+                      display: inline-block;
+                      width: span(4.9);
                       }
                       a{
                           display: block;
