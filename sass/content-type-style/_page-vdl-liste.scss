@@ -16,9 +16,7 @@ body .conteneur .conteneur-flex{
     #zone-2.type-page-actualites{order:1;}
     #zone-3.type-page-actualites{order:3;}
     @include breakpoint ($desktop){
-        #zone-1.type-page-actualites{order:1;}
-        #zone-2.type-page-actualites{order:2;}
-        #zone-3.type-page-actualites{order:3;}
+
     }
 }
 
@@ -91,18 +89,24 @@ $zones: zone-1 ; //, zone-2, zone-3
                 padding: span(0.02);
               }
               div.form-item{
-                  margin: 0 0 span(0.01) 0;
-                  @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
-                    @include hack-Edge;
-                    @include hack-IE;
-                    @include txt-colonnes();
-                    //Tri horizontal plutot que vertical des éléments. Besoin d'une largeur
-                    // Régler column-count: sur 1 au niveau de l'UL
-                    display: inline-block;
-                    width: span(5.5);
-                    padding: span(0.35);
-                    //Garder le margin par défaut
-                  }
+                margin: 0 0 span(0.01) 0;
+                @include breakpoint(($desktop,$desktopwide)){
+                  @include hack-Edge;
+                  @include hack-IE;
+                  @include txt-colonnes();
+                  padding: span(1);
+                }
+                @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)){
+                  @include hack-Edge;
+                  @include hack-IE;
+                  @include txt-colonnes();
+                  //Tri horizontal plutot que vertical des éléments. Besoin d'une largeur
+                  // Régler column-count: sur 1 au niveau de l'UL
+                  display: inline-block;
+                  width: span(5.5);
+                  padding: span(0.35);
+                  //Garder le margin par défaut
+                }
               }
           }
           .item-list{
@@ -311,7 +315,7 @@ ______________________________*/
 
                 {
 
-                    @include backgroundImage(('BG/BG_Filtres_Exposes.png'), transparent, center -4vw , no-repeat );
+                    @include backgroundImage(('BG/BG_Filtres_Exposes.png'), transparent, center -1.8vw , no-repeat );
                     background-size:60%;
                     background-color: $violet;
                     label{
