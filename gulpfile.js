@@ -131,7 +131,7 @@ var processors = [
 
 //Variables spécifiques au thèmes
 var urlSite = ['http://d8-gasquet.vmdev/'];
-var aliasDrush = ['@vmdevd8'];
+var aliasDrush = ['@vmdevd8mg'];
 // #############################
 // Tâches à accomplir - Tasks
 // #############################
@@ -200,14 +200,14 @@ browserSync.init({
     });
 
 
-           gulp.watch("./public/*.php").on('change', browserSync.reload);
+           gulp.watch("./public/*.php").on('change', bs_reload);
            gulp.watch(basePaths.src, ['sasscompil']);
-           gulp.watch(folderPaths.styles.src).on('change', browserSync.reload);
-           gulp.watch(folderPaths.templates.d8).on('change', browserSync.reload);
-         //  gulp.watch(folderPaths.templates.d6nodestpl).on('change', browserSync.reload);
-           gulp.watch(folderPaths.settings.d8).on('change', browserSync.reload);
-           gulp.watch(folderPaths.js.jsd68).on('change', browserSync.reload);
-           gulp.watch(folderPaths.ymlsettings.d8yml).on('change', browserSync.reload);
+           gulp.watch(folderPaths.styles.src).on('change', bs_reload);
+           gulp.watch(folderPaths.templates.d8).on('change', bs_reload);
+         //  gulp.watch(folderPaths.templates.d6nodestpl).on('change', bs_reload);
+           gulp.watch(folderPaths.settings.d8).on('change', bs_reload);
+           gulp.watch(folderPaths.js.jsd68).on('change', bs_reload);
+           gulp.watch(folderPaths.ymlsettings.d8yml).on('change', bs_reload);
          //  gulp.watch(basePaths.src, ['drush']);
          //  gulp.watch(folderPaths.templates.d6, ['drush']);
          //  gulp.watch(folderPaths.js.jsd68, ['drush']);
