@@ -78,7 +78,7 @@ $zones: zone-1 ; //, zone-2, zone-3
               @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)){
                 //Diminue taille items sur Tablette selon réglage de display
                 //display:inherit;
-                column-count: 2;// Tablette S3: Edge OK FF ko
+                column-count: 1;// Tablette S3: Edge & FF OK
                 column-fill: balance;
                 white-space: normal;
                 padding: span(0.02);
@@ -86,17 +86,24 @@ $zones: zone-1 ; //, zone-2, zone-3
               div.form-item{
                   margin: 0 0 span(0.01) 0;
                   @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
-                      @include  txt-colonnes();
-
-                      padding: span(0.35);
+                    @include hack-Edge;
+                    @include hack-IE;
+                    @include txt-colonnes();
+                    //Tri horizontal plutot que vertical des éléments. Besoin d'une largeur
+                    // Régler column-count: sur 1 au niveau de l'UL
+                    display: inline-block;
+                    width: span(5.5);
+                    padding: span(0.35);
+                    //Garder le margin par défaut
                   }
               }
           }
           .item-list{
               @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
-                  /*width: span(12);*/
+            // Ne pas utiliser cette classe. Trop générique
+
               }
-              ul.liste-vdl-lycee{
+          ul.liste-vdl-lycee{
                   @include breakpoint(($desktop,$desktopwide)){
   /*                                        column-count: 5;
                                           column-fill: auto;
@@ -159,11 +166,12 @@ $zones: zone-1 ; //, zone-2, zone-3
                       @include hack-Edge;
                       @include hack-IE;
                       @include txt-colonnes();
-                      margin: span(0.1);
+
                       //Tri horizontal plutot que vertical des éléments. Besoin d'une largeur
-                      // Régler column-count: sur 1
+                      // Régler column-count: sur 1 au niveau de l'UL - Validé Edge et FF TabS3
                       display: inline-block;
-                      width: span(4.9);
+                      width: span(5.5);
+                      margin: span(0.01);
                       }
                       a{
                           display: block;
