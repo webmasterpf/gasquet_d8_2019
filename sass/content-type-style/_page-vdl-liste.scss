@@ -192,50 +192,88 @@ $zones: zone-1 ; //, zone-2, zone-3
                   }
               } // Fin UL liste-vdl-lycee
               ul.acces-contenu-lycee {
-                column-count: 0;
-                @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)) {
-                  column-count: 2;
-                  column-fill: balance;
+                padding: 0;
+                @include breakpoint(($desktop,$desktopwide)){
+                    column-count: 2;//adapter selon taille des blocs / images
+                    column-fill: balance;//bug FF en colonne résolu
+                    white-space: normal;
+                    padding: span(0.1);
+                }
+                @include breakpoint(($tablet-hd,$tablet,$mobilelandscape,$tabletlandscape)){
+                  //Layout différent pour tablette, 2 colonnes
+                  column-count: 2;//adapter selon taille des blocs / images
+                  column-fill: balance;//bug FF en colonne résolu
+                  column-gap: em(10px);//taille de la gouttière (gutter)
                   white-space: normal;
                   padding: span(0.1);
                 }
 
                 li {
-                  @include txt-colonnes();
+                  padding: 0;
+                  margin: span(0.1) 0;
+                  overflow: hidden;
+                  @include breakpoint(($desktop,$desktopwide)){
                   @include hack-Edge;
                   @include hack-IE;
-                  display: flow-root;
-                  span.illus-lycee {
-                    overflow: hidden;
+                  @include txt-colonnes();
 
-                    img {
-                      transform: scale(1);
-                    }
-                  }
+                }
+                @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)) {
+                  @include hack-Edge;
+                  @include hack-IE;
+                  @include txt-colonnes();
+                  //Pour avoir 2 colonnes sans que items dépassent - TabS3 Portrait
+                  margin: 0 span(0.1) 0;
+                  max-width: 45vw;
+                  display: inline-block;
+                }
+                span.illus-lycee {
+                        overflow: hidden;
+                        padding: 0;
+                        img {
+                          transform: scale(1);
+                        }
+                        @include breakpoint(($desktop,$desktopwide)){
+                          max-width: 70%;
+                          float: left;
+                          content: "";
 
-                  span.complement,
-                  span.titre-lycee {
-                    padding: span(0.1);
-                  }
+                          img {
+                            transform: scale(1.1);
+                          }
+                        }
+                        @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)) {
+                          img {
+                            transform: scale(1.05);
+                          }
+                        }
+                      }
 
-                  span {
-                    @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)) {
-                      max-width: span(1);
-                    }
-                    @include breakpoint($desktop) {
-                      max-width: 7vw;
-                    }
-                    @include breakpoint($desktopwide) {
-                      max-width: 10vw;
-                      padding: 0 0 0 span(0.01);
-                    }
-                  }
+                      span.complement,
+                      span.titre-lycee {
+                        padding: span(0.1);
+                        display: block;
+
+
+                        @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)) {
+                          //max-width: 40vw;
+                        }
+                        @include breakpoint($desktop) {
+                          max-width: 7vw;
+                          float: left;
+                        }
+                        @include breakpoint($desktopwide) {
+                          max-width: 11vw;
+                          padding: 0 0 0 span(0.01);
+                          float: left;
+                        }
+                      }
 
                   a {
                     display: inherit;
                   }
                 }
-              }// Fin UL acces-contenu-lycee
+              } // Fin acces-contenu-lycee
           } // Fin item-list
       } //Fin Aside liste-vdl
 
@@ -454,34 +492,26 @@ ______________________________*/
         }// Fin UL.liste-vdl-lycee
         //Liste d'accès à la rubrique lycée
         ul.acces-contenu-lycee {
+          //Style général des éléments
+              li {
+                list-style: none;
+                background: $rose-fushia;
+                @include txt-cesure();
 
-            //Style général des éléments
-            li {
-              list-style: none;
-              background: $rose-fushia;
-              @include txt-cesure();
+                a {
+                  color: $blanc-casse;
+                  text-decoration: none;
+                  font-weight: bold;
+                  @include font-size(l); //utilisation de typey
+                }
+          span.titre-lycee {
+            color: $blanc-casse;
+            @include txt-cesure();
 
-              a {
-                color: $blanc-casse;
-                text-decoration: none;
-                font-weight: bold;
-                @include font-size(l); //utilisation de typey
-              }
-        span.titre-lycee {
-          color: $blanc-casse;
-          @include txt-cesure();
-          display: inline-block;
-          float: left;
-        }
-
-        span.illus-lycee {
-          position: relative;
-          @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)) {
-            max-width: 70%;
-            float: left;
-            content: "";
-            padding: 0;
           }
+
+          span.illus-lycee {
+            position: relative;
 
                 a {
                   &:before {
