@@ -101,90 +101,8 @@ article.middle-content {
     }
 
   }
+//Pour Accès Contenu Lycée voir _page-vdl-liste.scss
 
-  ul.acces-contenu-lycee {
-    padding: 0;
-    @include breakpoint(($desktop,$desktopwide)){
-        column-count: 2;//adapter selon taille des blocs / images
-        column-fill: balance;//bug FF en colonne résolu
-        white-space: normal;
-        padding: span(0.1);
-    }
-    @include breakpoint(($tablet-hd,$tablet,$mobilelandscape,$tabletlandscape)){
-      //Layout différent pour tablette, 2 colonnes
-      column-count: 2;//adapter selon taille des blocs / images
-      column-fill: balance;//bug FF en colonne résolu
-      column-gap: em(10px);//taille de la gouttière (gutter)
-      white-space: normal;
-      padding: span(0.1);
-    }
-
-    li {
-      padding: 0;
-      margin: span(0.1) 0;
-      overflow: hidden;
-      @include breakpoint(($desktop,$desktopwide)){
-      @include hack-Edge;
-      @include hack-IE;
-      @include txt-colonnes();
-
-    }
-    @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)) {
-      @include hack-Edge;
-      @include hack-IE;
-      @include txt-colonnes();
-      //Pour avoir 2 colonnes sans que items dépassent - TabS3 Portrait
-      margin: 0 span(0.1) 0;
-      max-width: 45vw;
-      display: inline-block;
-    }
-    span.illus-lycee {
-            overflow: hidden;
-            padding: 0;
-            img {
-              transform: scale(1);
-            }
-            @include breakpoint(($desktop,$desktopwide)){
-              max-width: 70%;
-              float: left;
-              content: "";
-
-              img {
-                transform: scale(1.1);
-              }
-            }
-            @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)) {
-              img {
-                transform: scale(1.05);
-              }
-            }
-          }
-
-          span.complement,
-          span.titre-lycee {
-            padding: span(0.1);
-            display: block;
-
-
-            @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)) {
-              //max-width: 40vw;
-            }
-            @include breakpoint($desktop) {
-              max-width: 7vw;
-              float: left;
-            }
-            @include breakpoint($desktopwide) {
-              max-width: 11vw;
-              padding: 0 0 0 span(0.01);
-              float: left;
-            }
-          }
-
-      a {
-        display: inherit;
-      }
-    }
-  }
 }
 
 #zone-2.type-page-globale {}
@@ -248,37 +166,7 @@ $zones: zone-1; //1ere boucle , zone-2, zone-3
         ¤¤¤ STYLES PROPRES ¤¤¤
 ______________________________*/
 #zone-1.type-page-globale {
-  ul.acces-contenu-lycee {
-    //Style général des éléments
-  li {
-    list-style: none;
-    background: $rose-fushia;
-    @include txt-cesure();
-
-    a {
-      color: $blanc-casse;
-      text-decoration: none;
-      font-weight: bold;
-      @include font-size(l); //utilisation de typey
-    }
-span.titre-lycee {
-color: $blanc-casse;
-@include txt-cesure();
-
-}
-
-span.illus-lycee {
-position: relative;
-
-
-      a {
-        &:before {
-          @include image-overlay('motif_img_overlay.png', 0 0, repeat);
-        }
-      }
-    }
-  }
-  }
+//Pour Accès Contenu Lycée voir _page-vdl-liste.scss
 }
 
 #zone-2.type-page-globale {}
