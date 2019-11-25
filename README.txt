@@ -68,6 +68,7 @@ include ($theme_path.'/chemin/vers/fichier.php');
 -- INUTILE --
 
 Pour le thème en production, inutile d'envoyer sur le serveur les dossiers sass, node-module
+Dossiers js/build et js/source sont inutiles (issus de Basic)
 
 Dans images
 -----------
