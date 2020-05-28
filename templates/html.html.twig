@@ -70,7 +70,8 @@
     <!-- ___ /ACCES LOGOS PARTENAIRES ____ -->
 
     {#
-Déplacement du bloc de chargement des JS du core Drupal et modules dans le fichier du footer, juste avant la fermeture du body
+Déplacement du bloc de chargement des JS du core Drupal et modules
+dans le fichier libraries.yml du thème,chargement via placeholder
 #}
     {% if browser_sync.enabled %}
       <script id="__bs_script__">
@@ -80,7 +81,8 @@ Déplacement du bloc de chargement des JS du core Drupal et modules dans le fich
 
     {% include directory ~ '/includes/inc_footer.html.twig' %}
 
-    {# IMPORTANT !! Toujours placer le chargement des JS du core et modules juste avant la fermeture du body !!!#}
-    <js-bottom-placeholder token="{{ placeholder_token }}">
-	</body>
+    {# % include directory ~ '/includes/drupal_debug/inc_drupal_debug.html.twig' %#}
+
+    {# IMPORTANT !! Toujours placer le chargment des JS du core et modules juste avant la fermeture du body !!!#}
+    <js-bottom-placeholder token="{{ placeholder_token }}"></body>
   </html>
