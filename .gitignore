@@ -1,6 +1,19 @@
-/nbproject/private
-/.ftpconfig
-/nbproject
-/.config.cson
-*Thumbs.db
-/*.cson
+/Import_Taxo_Termes.csv
+*.scssc
+*.sassc
+.sass-cache
+*.map
+node_modules
+.DS_Store
+symfony-2.8
+private
+.db
+<<<<<<< Updated upstream
+=======
+.ftp*
+Thumbs.db
+*.json
+>>>>>>> Stashed changes
+.ftpconfig
+
+config.cson
