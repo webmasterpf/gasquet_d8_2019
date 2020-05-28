@@ -53,8 +53,10 @@ Style - layout pour le bandeau des autres sites de l'ASSO
                 a{
                     text-decoration: none;
                     @include font-size(m);//utilisation de typey
-                    &:hover{color: #FBFBFB;
-                            transition: background 2s ease,color 1000ms ease;-webkit-transition: background 2s ease,color 1000ms ease;}
+                    &:hover{
+                      color: #FBFBFB;
+                      transition: background 2s ease,color 1000ms ease;
+                          }
                 }
             }
         }
