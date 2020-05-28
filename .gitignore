@@ -8,12 +8,20 @@ node_modules
 symfony-2.8
 private
 .db
-<<<<<<< Updated upstream
-=======
 .ftp*
 Thumbs.db
 *.json
->>>>>>> Stashed changes
-.ftpconfig
+## Dossiers ignorés
+css
+symfony-2.8
+private
+node_modules
+*.sqlite
+*.suo
+3rdparty/font-awesome/scss/font-awesome.css
+3rdparty/font-awesome/css/font-awesome.css
+css/application.css
+css/application.css.map
+*/Thumbs.db
 
-config.cson
+*.cson
