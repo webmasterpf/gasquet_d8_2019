@@ -57,10 +57,17 @@ article.middle-content {
       }
       // Position différente de l'image selon le nid.
       &.illustration-nid-133{
-        @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)) {
+        @include breakpoint(($desktop,$desktopwide)) {
           img {
             transform: translate(0%,-37%);
           }
+        }
+        @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)){
+            min-height: 25vw;
+            max-height: 40vw;
+            img{
+                transform: translate(0%,-35%);
+            }
         }
       }
       &.illustration-nid-526{ //Page rubrique lycée
