@@ -42,6 +42,7 @@ https://github.com/at-import/breakpoint
 
 Pour utiliser les Breakpoints CSS avec javascript : enquire.js
 npm install enquire.js  permet d'installer + enquire.js@2.1.6
+05/2020: inutile,plutôt utiliser l'url distante via le fichier .libraries
 
 BROWSER SYNC
 -----------------
