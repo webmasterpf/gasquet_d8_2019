@@ -43,6 +43,51 @@ regions:
   left: 'Zone Gauche - Défaut'
   right: 'Zone Droite - Défaut'
 
+#Retrait des CSS ajoutées par le système - Core Drupal
+libraries-remove:
+  - core/assets/vendor/normalize-css/normalize.css
+  - core/modules/system/css/system.module.css
+  - core/modules/system/css/system.theme.css
+  - core/modules/views/css/views.module.css
+  - gasquet_d8_2019/npm.enquire
+
+#Liste des librairies à charger (reprise du ficher MON_THEME.libraries.yml)
+#Transposition du chargement des CSS ou JS depuis le fichier info du D6
+# https://www.drupal.org/docs/8/theming/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-theme
+libraries-override:
+libraries-extend:
+libraries:
+  # Les fichiers (librairies) de style chargés pour toutes les pages.
+  # Utilise une Asset Library (bibliothèque) définie dans
+  # le fichier NOM_THEME.libraries.yml
+    #Les librairies de javascript
+    #- gasquet_d8_2019/js
+  - gasquet_d8_2019/at.enquire
+  #- gasquet_d8_2019/npm.enquire
+    #- gasquet_d8_2019/cdn.jquery
+  - gasquet_d8_2019/global-scripts
+  #Les librairies de style
+#  - core/normalize
+  - gasquet_d8_2019/global-styling
+  - gasquet_d8_2019/fonts
+  #- gasquet_d8_2019/3rdparty
+
+regions:
+ #Régions de base - devient {{ page.header }}  dans fichier .twig
+ #synthaxe : nom_region: 'Nom Région'
+ #Regions par défaut
+  header: 'Header - Défaut'
+  help: 'Help - Défaut'
+  page_top: 'Page top - Défaut'
+  page_bottom: 'Page bottom - Défaut'
+  highlighted: 'Highlighted - Défaut'
+  content: 'Content - Défaut'
+  sidebar_first: 'Sidebar first - Défaut'
+  sidebar_second: 'Sidebar second - Défaut'
+  footer: 'Footer - Défaut'
+  left: 'Zone Gauche - Défaut'
+  right: 'Zone Droite - Défaut'
+
 
 
 #Regions Custom Redesign Susy3 - 2018 et suivant
@@ -72,6 +117,7 @@ regions:
  #Regions customs pour site Provence Formation
 #  centralBloc: 'Zone pour bloc central - View Bloc'
 #  centre_partenaire: 'Zone centrale page partenaire'
+
 
 
  #Region pour les node.tpl (ajouter dans fichier MON_THEME.theme)
