@@ -20,12 +20,12 @@ libraries:
   #Les fichiers (librairies) de style chargés pour toutes les pages. Utilise une Asset Library (bibliothèque) définie dans
   # le fichier NOM_THEME.libraries.yml
   #Les librairies de style
-#  - core/normalize
+# - core/normalize
   - gasquet_d8_2019/global-styling
-#  - gasquet_d8_2019/css
-#  - gasquet_d8_2019/3rdparty
+# - gasquet_d8_2019/css
+# - gasquet_d8_2019/3rdparty
   #Les librairies de javascript
-#  - gasquet_d8_2019/js
+# - gasquet_d8_2019/js
   - gasquet_d8_2019/global-scripts
 regions:
  #Régions de base - devient {{ page.header }}  dans fichier .twig
@@ -60,14 +60,14 @@ libraries:
   # Les fichiers (librairies) de style chargés pour toutes les pages.
   # Utilise une Asset Library (bibliothèque) définie dans
   # le fichier NOM_THEME.libraries.yml
-    #Les librairies de javascript
-    #- gasquet_d8_2019/js
+  #Les librairies de javascript
+  #- gasquet_d8_2019/js
   - gasquet_d8_2019/at.enquire
   #- gasquet_d8_2019/npm.enquire
-    #- gasquet_d8_2019/cdn.jquery
+  #- gasquet_d8_2019/cdn.jquery
   - gasquet_d8_2019/global-scripts
   #Les librairies de style
-#  - core/normalize
+  #- core/normalize
   - gasquet_d8_2019/global-styling
   - gasquet_d8_2019/fonts
   #- gasquet_d8_2019/3rdparty
