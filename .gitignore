@@ -1,21 +1,13 @@
+## Fichiers ignorés
 /Import_Taxo_Termes.csv
 *.scssc
 *.sassc
 .sass-cache
 *.map
-node_modules
-.DS_Store
-symfony-2.8
-private
 .db
 .ftp*
 Thumbs.db
 *.json
-## Dossiers ignorés
-css
-symfony-2.8
-private
-node_modules
 *.sqlite
 *.suo
 3rdparty/font-awesome/scss/font-awesome.css
@@ -23,5 +15,9 @@ node_modules
 css/application.css
 css/application.css.map
 */Thumbs.db
-
 *.cson
+## Dossiers ignorés
+css
+symfony-2.8
+private
+node_modules
