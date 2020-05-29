@@ -202,7 +202,7 @@ gulp.task('drush', function() {
 
 
 //Initialisation de la tâche de browser-sync - MAJ 2019-11
-gulp.task('browser-sync',  ['sasscompil'], function() {
+gulp.task('browser-sync', function() {
 browserSync.init({
         //changer l'adresse du site pour lequel utiliser browserSync, solution par variable fonctionne pas
 //        proxy: '.urlSite.',
