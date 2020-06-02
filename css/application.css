@@ -14309,13 +14309,15 @@ body .conteneur .conteneur-flex #zone-3.type-fiche-formation {
   }
 }
 
-#zone-3.type-fiche-formation aside.ficheform-savoirplus, #zone-3.type-fiche-formation aside.lycees-possibles {
+#zone-3.type-fiche-formation aside.ficheform-savoirplus,
+#zone-3.type-fiche-formation aside.lycees-possibles {
   margin: calc(0.5em + ((100% - 6em) / 12 * 0.01)) auto;
   padding: calc(0.5em + ((100% - 6em) / 12 * 0.01));
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi), only screen and (min-device-width: 319px) and (max-device-width: 765px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 96dpi), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 96dpi) {
-  #zone-3.type-fiche-formation aside.ficheform-savoirplus, #zone-3.type-fiche-formation aside.lycees-possibles {
+  #zone-3.type-fiche-formation aside.ficheform-savoirplus,
+  #zone-3.type-fiche-formation aside.lycees-possibles {
     width: calc(2.5em + ((100% - 6em) / 12 * 5));
   }
 }
@@ -14361,7 +14363,9 @@ body .conteneur .conteneur-flex #zone-3.type-fiche-formation {
 
 /*######-------- ||| STYLE ||| --------######*/
 /*¤¤¤ STYLES COMMUNS ¤¤¤*/
-#zone-1.type-fiche-formation p, #zone-1.type-fiche-formation ul, #zone-1.type-fiche-formation li,
+#zone-1.type-fiche-formation p,
+#zone-1.type-fiche-formation ul,
+#zone-1.type-fiche-formation li,
 #zone-2.type-fiche-formation p,
 #zone-2.type-fiche-formation ul,
 #zone-2.type-fiche-formation li,
@@ -14552,25 +14556,29 @@ ______________________________*/
   margin: 0.3125em 1.25em;
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform {
   background: transparent url("../images/BG/stripe_rose_violet_pastel.png") repeat top left;
   background-color: #ECECED;
   border-radius: 1em;
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus a, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform a {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus a,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform a {
   background: #ECECED;
   color: #911381;
   text-decoration: none;
   padding: calc(0.5em + ((100% - 6em) / 12 * 0.01)) calc(0.5em + ((100% - 6em) / 12 * 0.03));
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus a:hover, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform a:hover {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus a:hover,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform a:hover {
   color: #606070;
   background: #E30078;
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus a[href*=".pdf"]::before, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform a[href*=".pdf"]::before {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus a[href*=".pdf"]::before,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform a[href*=".pdf"]::before {
   background: transparent url("../images/PNG/Fichiers@3x.png") top left no-repeat;
   background-size: contain;
   content: "";
@@ -14585,11 +14593,13 @@ ______________________________*/
           transform: scale(1);
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus a img.filefield-icon, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform a img.filefield-icon {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus a img.filefield-icon,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform a img.filefield-icon {
   display: none;
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus a[href*="/"]:not([href*=".pdf"])::before, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform a[href*="/"]:not([href*=".pdf"])::before {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus a[href*="/"]:not([href*=".pdf"])::before,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform a[href*="/"]:not([href*=".pdf"])::before {
   background: transparent url("../images/PNG/liens@3x.png") top left no-repeat;
   background-size: contain;
   content: "";
@@ -14604,7 +14614,8 @@ ______________________________*/
           transform: scale(1);
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus .label-field-lien-utile-ficheform, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform .label-field-lien-utile-ficheform {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus .label-field-lien-utile-ficheform,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform .label-field-lien-utile-ficheform {
   font-weight: bold;
   color: #ECECED;
   background: #E30078;
@@ -14612,7 +14623,8 @@ ______________________________*/
   margin: 0 0 calc(0.5em + ((100% - 6em) / 12 * 0.2)) calc(0.5em + ((100% - 6em) / 12 * 0.2));
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus .views-field-title > span, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform .views-field-title > span {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus .views-field-title > span,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform .views-field-title > span {
   color: #e94f2d;
   background: #606070;
   text-align: center;
@@ -14626,22 +14638,31 @@ ______________________________*/
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi), only screen and (min-device-width: 319px) and (max-device-width: 765px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 96dpi), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 96dpi) {
-  #zone-2.type-fiche-formation aside.ficheform-savoirplus .views-field-title > span, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform .views-field-title > span {
+  #zone-2.type-fiche-formation aside.ficheform-savoirplus .views-field-title > span,
+  #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform .views-field-title > span {
     margin: 0 0 0 calc(3em + ((100% - 6em) / 12 * 5.5));
     padding: calc(0.5em + ((100% - 6em) / 12 * 0.001));
   }
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus ul, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus ul,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul {
   text-decoration: none;
   padding: calc(0.5em + ((100% - 6em) / 12 * 0.01)) calc(0.5em + ((100% - 6em) / 12 * 0.03));
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus ul:hover, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul:hover {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus ul:hover,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul:hover {
   background: transparent;
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus ul[href*=".pdf"]::before, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul[href*=".pdf"]::before {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus ul li,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul li {
+  list-style-type: none;
+}
+
+#zone-2.type-fiche-formation aside.ficheform-savoirplus ul[href*=".pdf"]::before,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul[href*=".pdf"]::before {
   /*
 Utilise la mixin backgroundImage pour l'image de BG. Bien spécifier les valeurs même par défaut Sinon
 problème de distribution des valeurs. Utiliser un visuel PNG blanc comme base pour meilleure
@@ -14671,11 +14692,13 @@ Support partiel par Edge à partir de v42
           transform: scale(1);
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus ul img.filefield-icon, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul img.filefield-icon {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus ul img.filefield-icon,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul img.filefield-icon {
   display: none;
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus ul[href*="/"]:not([href*=".pdf"])::before, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul[href*="/"]:not([href*=".pdf"])::before {
+#zone-2.type-fiche-formation aside.ficheform-savoirplus ul[href*="/"]:not([href*=".pdf"])::before,
+#zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul[href*="/"]:not([href*=".pdf"])::before {
   /*
 Utilise la mixin backgroundImage pour l'image de BG. Bien spécifier les valeurs même par défaut Sinon
 problème de distribution des valeurs. Utiliser un visuel PNG blanc comme base pour meilleure
