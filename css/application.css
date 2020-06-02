@@ -6525,8 +6525,8 @@ body .conteneur .conteneur-flex #zone-3.type-page-pole {
     overflow: hidden;
   }
   #zone-1.type-page-pole aside.liste-formations-initiales ul.formations-initiales li span.illustration img {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   #zone-1.type-page-pole aside.liste-formations-initiales ul.formations-initiales li span.titre-fiche, #zone-1.type-page-pole aside.liste-formations-initiales ul.formations-initiales li span.complement {
     padding: calc(0.5em + ((100% - 6em) / 12 * 0.1));
