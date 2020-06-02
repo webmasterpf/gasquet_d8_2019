@@ -3,7 +3,6 @@
 *.scssc
 *.sassc
 .sass-cache
-*.map
 .db
 .ftp*
 Thumbs.db
@@ -12,8 +11,7 @@ package-lock.json
 *.sqlite
 *.suo
 *.psd
-3rdparty/font-awesome/scss/font-awesome.css
-3rdparty/font-awesome/css/font-awesome.css
+3rdparty/*
 */Thumbs.db
 *.cson
 ## Dossiers ignorés
