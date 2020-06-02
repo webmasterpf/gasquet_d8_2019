@@ -52,6 +52,7 @@ GIT
 -----------------
 Pour compilation locale utiliser Git pour synchroniser LAMP et machien locale.
 Automatisation via un hook dans le dossier du dépôt local sur le LAMP - Ajuster les réglages pour post-update
+Test
 
 REGLAGES A FAIRE
 ----------------
