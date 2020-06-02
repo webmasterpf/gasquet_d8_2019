@@ -85,20 +85,7 @@ var autoprefixer = require('autoprefixer');
 
 // Autoprefixer : Navigateurs à cibler pour le préfixage CSS
 // Liste fourni depuis 06/19 par .browserslistrc - Editer pour modifier.
-/*var AUTOPREFIXER = [
 
-'> 1%',
-'ie >= 8',
-'edge >= 15',
-'ie_mob >= 10',
-'ff >= 45',
-'chrome >= 45',
-'safari >= 7',
-'opera >= 23',
-'ios >= 7',
-'android >= 4',
-'bb >= 10'
-];*/
 
 //Tableau pour utiliser les plugins de PostCSS
 //https://webdesign.tutsplus.com/tutorials/postcss-quickstart-guide-gulp-setup--cms-24543
@@ -190,7 +177,7 @@ gulp.task('drush', function() {
     })
 
     .pipe(plugins.shell([
-      'drush @vmdevd6pf cron && drush @vmdevd6pf cc all'
+      'drush @vmdevd8mg cron && drush @vmdevd8mg cr'
 
     ]))
     .pipe(plugins.notify({
@@ -249,5 +236,7 @@ gulp.task('bs-seul', ['browser-sync'], function () {
     gulp.watch(folderPaths.settings.d8, bs_reload);
     gulp.watch(folderPaths.js.jsd68, bs_reload);
     gulp.watch(folderPaths.ymlsettings.d8yml, bs_reload);
-
+    //Vide le chache drupal selon activité des dossiers
+    gulp.watch(basePaths.dest, ['drush']);
+    gulp.watch(folderPaths.templates.d8, ['drush']);
 });
