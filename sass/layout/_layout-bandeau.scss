@@ -46,7 +46,7 @@ Style - layout pour le bandeau des autres sites de l'ASSO
             li{
                 float: left;
                 list-style : none;
-                margin: 0 span(0.3);
+                margin: 0 span(0.1);
                 &:last-child{
                     /*@include last;*/
                 }
