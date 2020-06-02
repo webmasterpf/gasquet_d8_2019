@@ -306,7 +306,8 @@ ______________________________*/
     }
     }
     aside.ficheform-savoirplus{}
-}
+}//#zone-1.type-fiche-formation
+
 #zone-2.type-fiche-formation{
         aside.ficheform-savoirplus,.bloc_docs_utiles_ficheform{
         @include backgroundImage(("BG/stripe_rose_violet_pastel.png"),transparent,repeat, top left);
@@ -421,7 +422,9 @@ display: inline-block;
 transform: scale(1);
 }
 }
-}//#zone-2.type-fiche-formation
+        }
+    }
+    }//#zone-2.type-fiche-formation
 #zone-3.type-fiche-formation{
     h3{
         transform: rotate(-1deg);
