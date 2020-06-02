@@ -7,7 +7,8 @@
 .db
 .ftp*
 Thumbs.db
-*.json
+package.json
+package-lock.json
 *.sqlite
 *.suo
 *.psd
