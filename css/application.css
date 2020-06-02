@@ -1564,7 +1564,7 @@ body .conteneur .off-canvas {
 }
 
 body .conteneur .close {
-  background: #ADC91F;
+  background: #E30078;
 }
 
 @media only screen and (min-device-width: 319px) and (max-device-width: 765px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 96dpi), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 96dpi) {
@@ -1578,7 +1578,7 @@ body .conteneur img.close-btn {
   cursor: pointer;
   zoom: 1.5;
   margin: 0 0 0 80%;
-  background: #ADC91F;
+  background: #E30078;
 }
 
 @media only screen and (min-device-width: 319px) and (max-device-width: 765px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 96dpi), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 96dpi) {
