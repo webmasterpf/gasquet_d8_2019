@@ -14282,7 +14282,7 @@ body .conteneur .conteneur-flex #zone-3.type-fiche-formation {
 
 /*######-------- ||| BORDURES ||| --------######*/
 /*######-------- ||| LAYOUT SPECIFIQUE ||| --------######*/
-#zone-diaporama.type-fiche-formations #illustration-pleinepage {
+#zone-diaporama.type-fiche-formation #illustration-pleinepage {
   min-height: 35vw;
   max-height: 90vw;
   overflow: hidden;
@@ -14291,7 +14291,7 @@ body .conteneur .conteneur-flex #zone-3.type-fiche-formation {
   background-size: cover;
 }
 
-#zone-diaporama.type-fiche-formations #illustration-pleinepage img {
+#zone-diaporama.type-fiche-formation #illustration-pleinepage img {
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
   max-width: 100%;
@@ -14303,88 +14303,88 @@ body .conteneur .conteneur-flex #zone-3.type-fiche-formation {
 }
 
 @-moz-document url-prefix() {
-  #zone-diaporama.type-fiche-formations #illustration-pleinepage img img {
+  #zone-diaporama.type-fiche-formation #illustration-pleinepage img img {
     width: 100%;
     max-width: 100%;
   }
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi) {
-  #zone-diaporama.type-fiche-formations #illustration-pleinepage {
+  #zone-diaporama.type-fiche-formation #illustration-pleinepage {
     min-height: 25vw;
     max-height: 30vw;
   }
-  #zone-diaporama.type-fiche-formations #illustration-pleinepage img {
+  #zone-diaporama.type-fiche-formation #illustration-pleinepage img {
     -webkit-transform: translate(0%, -6%);
             transform: translate(0%, -6%);
   }
 }
 
 @media only screen and (min-device-width: 319px) and (max-device-width: 765px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 96dpi), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 96dpi) {
-  #zone-diaporama.type-fiche-formations #illustration-pleinepage {
+  #zone-diaporama.type-fiche-formation #illustration-pleinepage {
     min-height: 25vw;
     max-height: 40vw;
   }
-  #zone-diaporama.type-fiche-formations #illustration-pleinepage img {
+  #zone-diaporama.type-fiche-formation #illustration-pleinepage img {
     -webkit-transform: translate(0%, -20%);
             transform: translate(0%, -20%);
   }
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi) {
-  #node-18 #zone-diaporama.type-fiche-formations #illustration-pleinepage img {
+  #node-18 #zone-diaporama.type-fiche-formation #illustration-pleinepage img {
     -webkit-transform: translate(0%, -18%);
             transform: translate(0%, -18%);
   }
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi) {
-  #node-73 #zone-diaporama.type-fiche-formations #illustration-pleinepage img {
+  #node-73 #zone-diaporama.type-fiche-formation #illustration-pleinepage img {
     -webkit-transform: translate(0%, -27%);
             transform: translate(0%, -27%);
   }
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi) {
-  #node-15 #zone-diaporama.type-fiche-formations #illustration-pleinepage img {
+  #node-15 #zone-diaporama.type-fiche-formation #illustration-pleinepage img {
     -webkit-transform: translate(0%, -46%);
             transform: translate(0%, -46%);
   }
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi), only screen and (min-device-width: 319px) and (max-device-width: 765px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 96dpi), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 96dpi) {
-  #zone-1.type-fiche-formations .complement-titre-fiche {
+  #zone-1.type-fiche-formation .complement-titre-fiche {
     width: calc(3em + ((100% - 6em) / 12 * 6));
     margin: calc(0.5em + ((100% - 6em) / 12 * 0.02)) auto;
   }
 }
 
-#zone-1.type-fiche-formations span.terme-pole {
+#zone-1.type-fiche-formation span.terme-pole {
   text-align: center;
   display: block;
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi) {
-  #zone-1.type-fiche-formations span.terme-pole {
+  #zone-1.type-fiche-formation span.terme-pole {
     width: calc(1em + ((100% - 6em) / 12 * 2));
     margin: 0 auto calc(0.5em + ((100% - 6em) / 12 * 0.1));
   }
 }
 
 @media only screen and (min-device-width: 319px) and (max-device-width: 765px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 96dpi), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 96dpi) {
-  #zone-1.type-fiche-formations span.terme-pole {
+  #zone-1.type-fiche-formation span.terme-pole {
     width: calc(2.5em + ((100% - 6em) / 12 * 5));
     margin: 0 auto calc(0.5em + ((100% - 6em) / 12 * 0.1));
   }
 }
 
-#zone-1.type-fiche-formations .content {
+#zone-1.type-fiche-formation .content {
   -webkit-column-count: inherit;
           column-count: inherit;
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 96dpi) {
-  #zone-1.type-fiche-formations .content {
+  #zone-1.type-fiche-formation .content {
     -webkit-column-count: 2;
             column-count: 2;
     -webkit-column-fill: balance;
@@ -14392,7 +14392,7 @@ body .conteneur .conteneur-flex #zone-3.type-fiche-formation {
     -webkit-column-rule: 0.125em dashed #E30078;
             column-rule: 0.125em dashed #E30078;
   }
-  #zone-1.type-fiche-formations .content h3 {
+  #zone-1.type-fiche-formation .content h3 {
     -webkit-column-break-inside: avoid;
             break-inside: avoid-column;
     page-break-inside: avoid;
