@@ -33,33 +33,73 @@ body .conteneur{
 /*######-------- ||| LAYOUT SPECIFIQUE ||| --------######*/
 #zone-diaporama.type-fiche-formation{
     // utiliser bxslider-cyrano.scss" pour régler le bx-viewport ou bx-caption
-    min-height: 35vw;
-    max-height: 90vw;
-    overflow: hidden;
-
-    img{
-        transform: translate(0%,0%);
-        @include adaptable-img();
-    }
-    @include breakpoint(($mobile-iphonehd,$mobile-galaxyS6)){
-        background:  $rose-fushia;
-    }
-    @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
-        min-height: 20vw;
-        max-height: 30vw;//Pour pouvoir augmenter ensuite la hauteur des images via bx-wrapper dans _bxslider-cyrano.scss
-        img{
-            //Avec Diapo il faut séparer le contenu du conteneur à cause de la position absolute. Position générique.
-            transform: translate(0%,-5%);
+    #illustration-pleinepage{
+            min-height: 35vw;
+            max-height: 90vw;
+            overflow: hidden;
+            position:relative;
+            //image par défaut en BG comme secours
+            @include backgroundImage(("defaut/defaut-Lycee-LR-2019.jpg"),transparent,no-repeat, top left);
+            background-size: cover;
+            img{
+                transform: translate(0%,0%);
+                @include adaptable-img();
+            }
+            @include breakpoint(($desktop,$desktopwide)){
+                min-height: 25vw;
+                max-height: 30vw;
+                img{
+                    transform: translate(0%,-6%);
+                }
+            }
+            @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)){
+                min-height: 25vw;
+                max-height: 40vw;
+                img{
+                    transform: translate(0%,-20%);
+                }
+            }
         }
-           .view-Diapo-multichoix{
-            transform: translate(0%,-12%);
-        }
 
+}
+//Position du visuel différente selon NiD
+#node-18{
+  #zone-diaporama.type-fiche-formation{
+      // utiliser bxslider-cyrano.scss" pour régler le bx-viewport ou bx-caption
+      #illustration-pleinepage{
+        @include breakpoint(($desktop,$desktopwide)){
+            img{
+                transform: translate(0%,-18%);
+            }
+        }
+      }
+    }
+}
+#node-73{
+  #zone-diaporama.type-fiche-formation{
+      // utiliser bxslider-cyrano.scss" pour régler le bx-viewport ou bx-caption
+      #illustration-pleinepage{
+        @include breakpoint(($desktop,$desktopwide)){
+            img{
+                transform: translate(0%,-27%);
+            }
+        }
+      }
+    }
+}
+#node-15{
+  #zone-diaporama.type-fiche-formation{
+      // utiliser bxslider-cyrano.scss" pour régler le bx-viewport ou bx-caption
+      #illustration-pleinepage{
+        @include breakpoint(($desktop,$desktopwide)){
+            img{
+                transform: translate(0%,-46%);
+            }
+        }
+      }
     }
 
 }
-
-
 #zone-1.type-fiche-formation{
     .complement-titre-fiche{
         @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
@@ -67,15 +107,18 @@ body .conteneur{
             margin: span(0.02) auto;
         }
     }
-    span.terme-pole{
-        text-align: center;
-        display: block;
-        @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
-        width: span(2);
-        margin: 0 auto span(0.1) auto;
-      }
-
-    }
+span.terme-pole {
+  text-align: center;
+  display: block;
+  @include breakpoint(($desktop,$desktopwide)) {
+    width: span(2);
+    margin: 0 auto span(0.1);
+  }
+  @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)) {
+    width: span(5);
+    margin: 0 auto span(0.1);
+  }
+}
     .content{
         column-count: inherit;
         @include breakpoint(($desktop,$desktopwide,$tabletlandscape)){
@@ -142,7 +185,32 @@ body .conteneur{
             }
         }
 
+li {
+span {
+  a {
+    &::before {
+      @include breakpoint(($desktop,$desktopwide)) {
+        height: 3.45vh; //Ajuster la hauteur selon taille du picto
+      }
+      @include breakpoint(($tabletlandscape)) {
+        height: 3.1vh; //Ajuster la hauteur selon taille du picto
+      }
+      @include breakpoint(($tablet)) {
+        height: 2.3vh; //Ajuster la hauteur selon taille du picto
+      }
+      @include breakpoint(($mobilelandscape)) {
+        height: 3.7vh; //Ajuster la hauteur selon taille du picto
+      }
     }
+  }
+}
+}
+      .label-field-lien-ficheform
+      {
+        //Besoin de simuler un br pour avoir un saut de ligne entre chaque éléments.HTML en liste plus efficace
+        @include clearfixsusy3;
+      }
+  }
 }
 
 /*######-------- ||| STYLE ||| --------######*/
@@ -238,7 +306,8 @@ ______________________________*/
     }
     }
     aside.ficheform-savoirplus{}
-}
+}//#zone-1.type-fiche-formation
+
 #zone-2.type-fiche-formation{
         aside.ficheform-savoirplus,.bloc_docs_utiles_ficheform{
         @include backgroundImage(("BG/stripe_rose_violet_pastel.png"),transparent,repeat, top left);
@@ -312,25 +381,58 @@ ______________________________*/
         }
         ul{
 
+      text-decoration:none;
+      padding: span(0.01) span(0.03);
+      &:hover{
+        color: $gris-clair;
+        background: $violet;
+      }
+      &[href*=".pdf"]{
+          &::before{
+            @include maskImage(("PNG/Fichier-blanc@3x.png"),100%,alpha,$vert);
+              //@include backgroundImage("PNG/Fichiers@3x.png");
+              background-size: contain;
+              content: "";
+              position: relative;
+              vertical-align: sub;
+              padding: em(10px);
+              margin:em(3px);
+              transition:0.5s all;
+              display: inline-block;
+              transform: scale(1);
 
-            li{
-                list-style: none;
-                list-style-position: inside;
-                @include font-size(s);//utilisation de typey
-            }
+          }
+      }
+      img.filefield-icon{
+
+          display: none;//initial
+      }
+      &[href*="/"]:not([href*=".pdf"]) { //pour cibler les liens externes et internes, exclure les pdf
+&::before {
+//@include backgroundImage("PNG/liens@3x.png");
+@include maskImage(("PNG/liens-blanc@3x.png"),100%,alpha,$vert);
+background-size: contain;
+content: "";
+position: relative;
+vertical-align: sub;
+padding: em(10px);
+margin: em(3px);
+transition: 0.5s all;
+display: inline-block;
+transform: scale(1);
+}
+}
         }
     }
-}
+    }//#zone-2.type-fiche-formation
 #zone-3.type-fiche-formation{
     h3{
         transform: rotate(-1deg);
         max-width: fit-content;
-
         color: $jaune;
         background: $gris-anthracite;
         padding: em(3px);
         margin: em(5px) em(20px);
-
     }
     ul{
         padding: 0;
@@ -355,16 +457,16 @@ ______________________________*/
         }
         ul{
 
-            li{
-                //suppression des puces
-                list-style-type: none;
-                @include font-size(s);//utilisation de typey
-            }
-        }
-    }
-
-
-
+      li{
+          list-style: none;
+          list-style-position: inside;
+          @include font-size(s);//utilisation de typey
+      }
+  }
 }
+
+
+}//.zone-3.type-fiche-formation
+
 #zone-4.type-fiche-formation{}
 #zone-5.type-fiche-formation{}

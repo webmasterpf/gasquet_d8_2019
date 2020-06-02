@@ -79,7 +79,7 @@ body .conteneur{
               white-space: normal;
               padding: span(0.02);
           }
-          @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)){
+          @include breakpoint(($tablet,$tabletlandscape)){
             //Diminue taille items sur Tablette selon réglage de display
             //display:inherit;
             column-count: 1;// Tablette S3: Edge & FF OK
@@ -87,15 +87,26 @@ body .conteneur{
             white-space: normal;
             padding: span(0.02);
           }
+          @include breakpoint(($mobilelandscape)){
+            //Diminue taille items sur Tablette selon réglage de display
+            //display:inherit;
+            column-count: 2;// Mobile Paysage
+            column-fill: balance;
+            white-space: normal;
+            padding: span(0.02);
+          }
           div.form-item{
               margin: 0 0 span(0.01) 0;
+              min-height: 7vh;
+              padding: span(0.15);
               @include breakpoint(($desktop,$desktopwide)){
                 @include hack-Edge;
                 @include hack-IE;
                 @include txt-colonnes();
                 padding: span(1);
+
               }
-              @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)){
+              @include breakpoint(($tablet,$tabletlandscape)){
                 @include hack-Edge;
                 @include hack-IE;
                 @include txt-colonnes();
@@ -104,6 +115,17 @@ body .conteneur{
                 display: inline-block;
                 width: span(5.5);
                 padding: span(0.35);
+                //Garder le margin par défaut
+              }
+              @include breakpoint(($mobilelandscape)){
+                @include hack-Edge;
+                @include hack-IE;
+                @include txt-colonnes();
+                //Tri horizontal plutot que vertical des éléments. Besoin d'une largeur
+                // Régler column-count: sur 1 au niveau de l'UL
+                display: block;
+                min-height: 19vh;
+                padding: span(0.15);
                 //Garder le margin par défaut
               }
           }
@@ -164,12 +186,30 @@ body .conteneur{
                   }
                 }
               }
+              //Padding pour tous supports
+              span.titre-fiche, span.complement{
+                  padding: span(0.1);
+              }
               a{
                   display: block;
               }
-            }
-        }
-    }
+            } //Fin li
+        }// Fin ul.formations-initiales
+
+        nav.pager{
+            @include clearfixsusy3;
+              column-span: all;//la pagination utilise toute la largeur
+
+            ul.pager__items{
+              width: span(4);
+              margin: 0 auto;
+              padding: span(0.1);
+              li{
+                  @include horizontal-list-item();
+              }
+            }// Fin ul.pager__items
+        }// Fin nav.pager
+    }//Fin aside.liste-formations-initiales
 }
 /*######-------- ||| STYLE ||| --------######*/
 
@@ -285,6 +325,11 @@ ______________________________*/
                 span.complement {
                     //classe ajoutée dans la vue - réécriture du champ
                     font-weight:initial; /*we revert back the inherited style*/
+                    @include font-size(s);//utilisation de typey
+                    @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
+                    @include font-size(l);//utilisation de typey
+
+                    }
                 }
                 /*                    &:matches(.complement){
                                         font-weight: initial;
@@ -293,7 +338,11 @@ ______________________________*/
                     color: $blanc-casse;
                     text-decoration: none;
                     font-weight: bold;
+                    @include font-size(s);//utilisation de typey
+                    @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
                     @include font-size(l);//utilisation de typey
+
+                    }
 
                 }
                 span.illustration >a {//uniquement les "a" sur l'image

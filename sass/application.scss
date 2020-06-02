@@ -21,7 +21,7 @@ breakpoint-2.7.1-
 ---------------------*/
 
 //Reset des propriétés : via node-normalize-scss (npm))
-@import "normalize";
+@import "../node_modules/node-normalize-scss/normalize";
 
 // Import de Compass (framework abandonné en 2016)
 //voir mixins_custom pour les remplacements des mixins Compass
@@ -35,8 +35,9 @@ breakpoint-2.7.1-
 //@import '../node_modules/susy/sass/plugins/svg-grid';
 
 
+
 //@import "sassy-buttons";
-@import "breakpoint";
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 //Remplacement de Vertical Rhythm par Typey (Composant de node-sass) Gestion de la typographie
 @import '../node_modules/typey/stylesheets/_typey.scss';
@@ -63,6 +64,7 @@ breakpoint-2.7.1-
 /*@import "./layout/_layout-defilant.scss";*/
 @import "./layout/_layout-bandeau.scss";
 @import "./layout/_layout-off-canvas-susy.scss";
+@import "./layout/_layout-partage-rs.scss";
 
 // Les BREAKPOINTS
 
