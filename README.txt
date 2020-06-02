@@ -48,6 +48,10 @@ BROWSER SYNC
 -----------------
 :/var/www/drupal-8/sites/all/themes/dossier_projet$ npm install browser-sync --save-dev
 
+GIT
+-----------------
+Pour compilation locale utiliser Git pour synchroniser LAMP et machien locale.
+Automatisation via un hook dans le dossier du dépôt local sur le LAMP - Ajuster les réglages pour post-update
 
 REGLAGES A FAIRE
 ----------------
