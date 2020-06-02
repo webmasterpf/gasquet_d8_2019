@@ -1443,7 +1443,36 @@ Style - layout pour le bandeau des autres sites de l'ASSO
   transition: background 2s ease,color 1000ms ease;
 }
 
-@media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi) {
+@media screen and (min-device-width: 1200px) {
+  .bandeau-pagetop {
+    display: block;
+    height: auto;
+  }
+  .bandeau-pagetop ul {
+    background: #FBFBFB;
+    display: block;
+    height: 2em;
+  }
+  .bandeau-pagetop ul li {
+    float: left;
+    list-style: none;
+    margin: 0 calc(0.5em + ((100% - 6em) / 12 * 0.3));
+  }
+  .bandeau-pagetop ul li:last-child {
+    /*@include last;*/
+  }
+  .bandeau-pagetop ul li a {
+    text-decoration: none;
+    font-size: 0.875em;
+  }
+  .bandeau-pagetop ul li a:hover {
+    color: #FBFBFB;
+    -webkit-transition: background 2s ease,color 1000ms ease;
+    transition: background 2s ease,color 1000ms ease;
+  }
+}
+
+@media screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi) {
   .bandeau-pagetop {
     display: block;
     height: auto;
