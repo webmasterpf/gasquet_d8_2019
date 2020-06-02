@@ -14638,8 +14638,7 @@ ______________________________*/
 }
 
 #zone-2.type-fiche-formation aside.ficheform-savoirplus ul:hover, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul:hover {
-  color: #ECECED;
-  background: #911381;
+  background: transparent;
 }
 
 #zone-2.type-fiche-formation aside.ficheform-savoirplus ul[href*=".pdf"]::before, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform ul[href*=".pdf"]::before {
