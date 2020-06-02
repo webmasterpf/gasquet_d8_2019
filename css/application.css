@@ -14855,7 +14855,7 @@ Support partiel par Edge à partir de v42
           transform: scale(1);
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus #zone-3.type-fiche-formation h3, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform #zone-3.type-fiche-formation h3 {
+#zone-3.type-fiche-formation h3 {
   -webkit-transform: rotate(-1deg);
           transform: rotate(-1deg);
   max-width: -webkit-fit-content;
@@ -14867,33 +14867,33 @@ Support partiel par Edge à partir de v42
   margin: 0.3125em 1.25em;
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus #zone-3.type-fiche-formation ul, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform #zone-3.type-fiche-formation ul {
+#zone-3.type-fiche-formation ul {
   padding: 0;
   margin: 0;
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus #zone-3.type-fiche-formation ul li, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform #zone-3.type-fiche-formation ul li {
+#zone-3.type-fiche-formation ul li {
   list-style: square;
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus #zone-3.type-fiche-formation .bloc_complement_actu_ficheform, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform #zone-3.type-fiche-formation .bloc_complement_actu_ficheform {
+#zone-3.type-fiche-formation .bloc_complement_actu_ficheform {
   background: transparent url("../images/BG/stripe_vert_vert_pastel.png") repeat top left;
   border-radius: 1em;
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus #zone-3.type-fiche-formation .bloc_complement_actu_ficheform a, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform #zone-3.type-fiche-formation .bloc_complement_actu_ficheform a {
+#zone-3.type-fiche-formation .bloc_complement_actu_ficheform a {
   background: #ECECED;
   color: #911381;
   text-decoration: none;
   padding: calc(0.5em + ((100% - 6em) / 12 * 0.01)) calc(0.5em + ((100% - 6em) / 12 * 0.03));
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus #zone-3.type-fiche-formation .bloc_complement_actu_ficheform a:hover, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform #zone-3.type-fiche-formation .bloc_complement_actu_ficheform a:hover {
+#zone-3.type-fiche-formation .bloc_complement_actu_ficheform a:hover {
   color: #606070;
   /*background: $rose-fushia;*/
 }
 
-#zone-2.type-fiche-formation aside.ficheform-savoirplus #zone-3.type-fiche-formation .bloc_complement_actu_ficheform ul li, #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform #zone-3.type-fiche-formation .bloc_complement_actu_ficheform ul li {
+#zone-3.type-fiche-formation .bloc_complement_actu_ficheform ul li {
   list-style: none;
   list-style-position: inside;
   font-size: 0.875em;
