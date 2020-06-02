@@ -1,4 +1,4 @@
-// $Id: README.txt,v 1.1 02∕04∕2011
+//** $Id: README.txt,v 1.1 02∕04∕2011
 
 ABOUT THEME
 -----------
