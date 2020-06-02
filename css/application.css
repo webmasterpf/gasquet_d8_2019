@@ -7744,14 +7744,6 @@ body .conteneur .conteneur-flex #zone-3.type-page-actualites {
 }
 
 /*¤¤¤ STYLES COMMUNS ¤¤¤*/
-#zone-1.type-page-actualites,
-#zone-2.type-page-actualites,
-#zone-3.type-page-actualites {
-  /*------------------------------------
-        ¤¤¤ STYLES PROPRES ¤¤¤
-______________________________*/
-}
-
 #zone-1.type-page-actualites p, #zone-1.type-page-actualites ul, #zone-1.type-page-actualites li,
 #zone-2.type-page-actualites p,
 #zone-2.type-page-actualites ul,
@@ -7821,51 +7813,34 @@ ______________________________*/
   color: #E30078;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item {
+/*------------------------------------
+        ¤¤¤ STYLES PROPRES ¤¤¤
+______________________________*/
+#zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item, #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item {
   background: #E30078;
   color: #FBFBFB;
   text-align: center;
   cursor: pointer;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item label, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item label,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item label,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item label,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item label,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item label {
+#zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item label, #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item label {
   cursor: pointer;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item label:after, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item label:after,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item label:after,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item label:after,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item label:after,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item label:after {
+#zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item label:after, #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item label:after {
   /*                        content: "PôLE";
                                                 color:$orange-fonce;
                                                 @include font-size(l);//utilisation de typey
                                                 font-family: $FontRaleway;*/
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item:hover:not(:first-child), #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item:hover:not(:first-child),
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item:hover:not(:first-child),
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item:hover:not(:first-child),
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item:hover:not(:first-child),
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item:hover:not(:first-child) {
+#zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item:hover:not(:first-child), #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item:hover:not(:first-child) {
   background: transparent url("../images/BG/BG_Filtres_Exposes.png") center -1.8vw no-repeat;
   background-size: 60%;
   background-color: #911381;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item:hover:not(:first-child) label, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item:hover:not(:first-child) label,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item:hover:not(:first-child) label,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item:hover:not(:first-child) label,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item:hover:not(:first-child) label,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item:hover:not(:first-child) label {
+#zone-1.type-page-actualites aside.liste-vdl .bef-exposed-form div.form-item:hover:not(:first-child) label, #zone-1.type-page-actualites aside.liste-actu-presse .bef-exposed-form div.form-item:hover:not(:first-child) label {
   opacity: 0.45;
   /*0.6*/
   -moz-opacity: 0.45;
@@ -7876,29 +7851,17 @@ ______________________________*/
   -khtml-opacity: 0.45;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .ajax-progress-throbber, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .ajax-progress-throbber,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .ajax-progress-throbber,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .ajax-progress-throbber,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .ajax-progress-throbber,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .ajax-progress-throbber {
+#zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .ajax-progress-throbber, #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .ajax-progress-throbber {
   display: none;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-exposed-widget, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-exposed-widget,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-exposed-widget,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-exposed-widget,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-exposed-widget,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-exposed-widget {
+#zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-exposed-widget, #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-exposed-widget {
   padding: 0;
   margin: 0;
   float: none;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button {
+#zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button, #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button {
   float: none;
   margin: 0 auto;
   width: 25vw;
@@ -7906,20 +7869,12 @@ ______________________________*/
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi), only screen and (min-device-width: 319px) and (max-device-width: 765px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 96dpi), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 96dpi) {
-  #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button,
-  #zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button,
-  #zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button,
-  #zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button,
-  #zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button {
+  #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button, #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button {
     width: 10vw;
   }
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button input[type="submit"], #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button input[type="submit"],
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button input[type="submit"],
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button input[type="submit"],
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button input[type="submit"],
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button input[type="submit"] {
+#zone-1.type-page-actualites aside.liste-vdl .views-exposed-form .views-submit-button input[type="submit"], #zone-1.type-page-actualites aside.liste-actu-presse .views-exposed-form .views-submit-button input[type="submit"] {
   background: #e94f2d;
   border: 0.0625em dashed #606070;
   color: #FBFBFB;
@@ -7927,20 +7882,12 @@ ______________________________*/
   font-family: "Arvo", Trebuchet MS, Verdana, sans-serif;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .view-filters #edit-children-of-wrapper, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .view-filters #edit-children-of-wrapper,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .view-filters #edit-children-of-wrapper,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .view-filters #edit-children-of-wrapper,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl .view-filters #edit-children-of-wrapper,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse .view-filters #edit-children-of-wrapper {
+#zone-1.type-page-actualites aside.liste-vdl .view-filters #edit-children-of-wrapper, #zone-1.type-page-actualites aside.liste-actu-presse .view-filters #edit-children-of-wrapper {
   display: none;
   visibility: hidden;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li {
   list-style: none;
   color: #FBFBFB;
   background: #9898a6;
@@ -7950,160 +7897,88 @@ ______________________________*/
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi), only screen and (min-device-width: 319px) and (max-device-width: 765px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 96dpi), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 96dpi) {
-  #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li,
-  #zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li,
-  #zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li,
-  #zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li,
-  #zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li {
+  #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li {
     -webkit-box-shadow: 0em 0em 0.5em #606070;
             box-shadow: 0em 0em 0.5em #606070;
   }
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-13, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-13,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-13,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-13,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-13,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-13 {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-13, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-13 {
   background: #01ABCF;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-15, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-15,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-15,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-15,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-15,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-15 {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-15, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-15 {
   background: #FAEB0C;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-15 *, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-15 *,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-15 *,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-15 *,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-15 *,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-15 * {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-15 *, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-15 * {
   color: #606070;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-14, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-14,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-14,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-14,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-14,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-14 {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-14, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-14 {
   background: #911381;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-16, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-16,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-16,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-16,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-16,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-16 {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-16, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-16 {
   background: #E30078;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-17, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-17,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-17,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-17,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-17,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-17 {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-17, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-17 {
   background: #F29400;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-17, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-17,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-17,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-17,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-17,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-17 {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-17, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-17 {
   background: #E3001C;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-25, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-25,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-25,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-25,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-25,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-25 {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-25, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-25 {
   background: #F29400;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-27, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-27,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-27,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-27,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-27,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-27 {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-27, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-27 {
   background: #E30078;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-27 *, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-27 *,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-27 *,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-27 *,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-27 *,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-27 * {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li.tid-27 *, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li.tid-27 * {
   color: #606070;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li a, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li a,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li a,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li a,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li a,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li a {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li a, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li a {
   color: #FBFBFB;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.4375em;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span {
   display: block;
   font-weight: bold;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.titre-vdl, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.titre-vdl,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.titre-vdl,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.titre-vdl,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.titre-vdl,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.titre-vdl {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.titre-vdl, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.titre-vdl {
   /*border: em(1px) dashed;//couleur héritée du LI parent*/
   text-transform: capitalize;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.extrait-vdl, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.extrait-vdl,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.extrait-vdl,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.extrait-vdl,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.extrait-vdl,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.extrait-vdl {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.extrait-vdl, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.extrait-vdl {
   font-weight: initial;
   /*we revert back the inherited style*/
   font-size: 0.875em;
 }
 
 @media screen and (min-device-width: 1200px), screen and (min-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 1dppx), screen and (min-device-width: 1440px) and (min--moz-device-pixel-ratio: 1), screen and (min-device-width: 1440px) and (min-resolution: 96dpi), only screen and (min-device-width: 319px) and (max-device-width: 765px) and (orientation: landscape), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 96dpi), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 1dppx), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 1), only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 96dpi) {
-  #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl img, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl img,
-  #zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl img,
-  #zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl img,
-  #zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl img,
-  #zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl img {
+  #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl img, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl img {
     -webkit-transform: translate(0%) scale(1.4);
             transform: translate(0%) scale(1.4);
     max-height: 50vh;
   }
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl a, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl a,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl a,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl a,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl a,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl a {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl a, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl a {
   position: relative;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl a:before, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl a:before,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl a:before,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl a:before,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl a:before,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl a:before {
+#zone-1.type-page-actualites aside.liste-vdl ul.liste-vdl-lycee li span.illus-vdl a:before, #zone-1.type-page-actualites aside.liste-actu-presse ul.liste-vdl-lycee li span.illus-vdl a:before {
   content: "";
   top: 0;
   left: 0;
@@ -8114,11 +7989,7 @@ ______________________________*/
   background: transparent url("../images/motif_img_overlay.png") 0 0 repeat;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li {
+#zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li, #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li {
   list-style: none;
   background: #E30078;
   word-wrap: break-word;
@@ -8126,41 +7997,25 @@ ______________________________*/
   overflow-wrap: break-word;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li a, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li a,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li a,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li a,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li a,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li a {
+#zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li a, #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li a {
   color: #FBFBFB;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.4375em;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.titre-lycee, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.titre-lycee,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.titre-lycee,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.titre-lycee,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.titre-lycee,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.titre-lycee {
+#zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.titre-lycee, #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.titre-lycee {
   color: #FBFBFB;
   word-wrap: break-word;
   word-break: break-word;
   overflow-wrap: break-word;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.illus-lycee, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.illus-lycee,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.illus-lycee,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.illus-lycee,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.illus-lycee,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.illus-lycee {
+#zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.illus-lycee, #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.illus-lycee {
   position: relative;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.illus-lycee a:before, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.illus-lycee a:before,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.illus-lycee a:before,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.illus-lycee a:before,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.illus-lycee a:before,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.illus-lycee a:before {
+#zone-1.type-page-actualites aside.liste-vdl ul.acces-contenu-lycee li span.illus-lycee a:before, #zone-1.type-page-actualites aside.liste-actu-presse ul.acces-contenu-lycee li span.illus-lycee a:before {
   content: "";
   top: 0;
   left: 0;
@@ -8171,11 +8026,7 @@ ______________________________*/
   background: transparent url("../images/motif_img_overlay.png") 0 0 repeat;
 }
 
-#zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl nav.pager ul.pager__items li.is-active, #zone-1.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse nav.pager ul.pager__items li.is-active,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl nav.pager ul.pager__items li.is-active,
-#zone-2.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse nav.pager ul.pager__items li.is-active,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-vdl nav.pager ul.pager__items li.is-active,
-#zone-3.type-page-actualites #zone-1.type-page-actualites aside.liste-actu-presse nav.pager ul.pager__items li.is-active {
+#zone-1.type-page-actualites aside.liste-vdl nav.pager ul.pager__items li.is-active, #zone-1.type-page-actualites aside.liste-actu-presse nav.pager ul.pager__items li.is-active {
   background: #ADC91F;
   display: block;
 }
