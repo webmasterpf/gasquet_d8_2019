@@ -162,7 +162,7 @@ body .conteneur{
                   span.illustration {
                       overflow: hidden;
                       img{
-                          transform: scale(1);
+                          transform: scale(1.5);//taillle de l'image sur la liste
                       }
                   }
                   span.titre-fiche, span.complement{
