@@ -1485,7 +1485,7 @@ Style - layout pour le bandeau des autres sites de l'ASSO
   .bandeau-pagetop ul li {
     float: left;
     list-style: none;
-    margin: 0 calc(0.5em + ((100% - 6em) / 12 * 0.3));
+    margin: 0 calc(0.5em + ((100% - 6em) / 12 * 0.2));
   }
   .bandeau-pagetop ul li:last-child {
     /*@include last;*/
