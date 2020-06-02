@@ -368,6 +368,7 @@ h1.titre-page-globale{
         color: $rose-fushia;
     }
 }
+}// Fin styles communs
 
 
 /*------------------------------------
@@ -575,14 +576,18 @@ ______________________________*/
                   background: $vert;
                   display: block;
                 }
-              }}}//Fin nav.pager
-    }// Fin Aside liste-vdl
+              }
+            }
+            }//Fin nav.pager
+          }// aside.liste-vdl,aside.liste-actu-presse
+    
+    
+            }// Fin Aside liste-vdl
 
-}
+
 #zone-2.type-page-actualites{
 
 }
 #zone-3.type-page-actualites{
 
-}
 }
