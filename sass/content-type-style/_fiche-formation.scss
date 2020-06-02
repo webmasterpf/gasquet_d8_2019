@@ -384,8 +384,8 @@ ______________________________*/
       text-decoration:none;
       padding: span(0.01) span(0.03);
       &:hover{
-        color: $gris-clair;
-        background: $violet;
+        //color: $gris-clair;
+        background: transparent;
       }
       &[href*=".pdf"]{
           &::before{
