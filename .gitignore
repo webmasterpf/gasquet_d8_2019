@@ -15,7 +15,7 @@ package-lock.json
 */Thumbs.db
 *.cson
 ## Dossiers ignorés
-css
 symfony-2.8
 private
 node_modules
+config
