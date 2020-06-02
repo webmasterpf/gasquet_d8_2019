@@ -6,12 +6,9 @@
 .db
 .ftp*
 Thumbs.db
-<<<<<<< HEAD
 *.json
-=======
 package.json
 package-lock.json
->>>>>>> tele_w_portage
 *.sqlite
 *.suo
 *.psd
