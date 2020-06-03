@@ -1,6 +1,20 @@
-/nbproject/private
-/.ftpconfig
-/nbproject
-/.config.cson
-*Thumbs.db
-/*.cson
+## Fichiers ignorés
+/Import_Taxo_Termes.csv
+*.scssc
+*.sassc
+.sass-cache
+.db
+.ftp*
+Thumbs.db
+*.json
+*.sqlite
+*.suo
+*.psd
+3rdparty/*
+*/Thumbs.db
+*.cson
+## Dossiers ignorés
+symfony-2.8
+private
+node_modules
+config
