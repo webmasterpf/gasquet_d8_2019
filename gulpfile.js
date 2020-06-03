@@ -180,7 +180,6 @@ gulp.task('drush', function() {
     })
 
     plugins.shell.task(
-      'cd /var/www/drupal-8/themes/custom/gasquet_d8_2019'
       'drush @vmdevd8mg cron && drush @vmdevd8mg cr'
 
     )
