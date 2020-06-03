@@ -81,6 +81,9 @@ var gcache = require('gulp-cache');
 //Plugins de PostCSS
 var autoprefixer = require('autoprefixer');
 
+//Composants NodeJS
+var cp = require('child_process');
+
 
 
 // Autoprefixer : Navigateurs à cibler pour le préfixage CSS
@@ -177,6 +180,7 @@ gulp.task('drush', function() {
     })
 
     plugins.shell.task(
+      'cd /var/www/drupal-8/themes/custom/gasquet_d8_2019'
       'drush @vmdevd8mg cron && drush @vmdevd8mg cr'
 
     )
@@ -185,6 +189,18 @@ gulp.task('drush', function() {
       message: "Cache Drupal vidé complètement.",
       onLast: true
     }));
+});
+
+//Vidage de cache Drupal avec child_process
+gulp.task('drush-cp', function() {
+return cp.spawn('drush', ['cache-rebuild'], {stdio: 'inherit'})
+  .on('close', done);
+
+  .pipe(plugins.notify({
+    title: "Vidage de Cache avec Drush",
+    message: "Cache Drupal vidé complètement.",
+    onLast: true
+  }));
 });
 
 
@@ -237,6 +253,6 @@ gulp.task('bs-seul', ['browser-sync'], function () {
     gulp.watch(folderPaths.js.jsd68, bs_reload);
     gulp.watch(folderPaths.ymlsettings.d8yml, bs_reload);
     //Vide le chache drupal selon activité des dossiers - Fonctionne pas
-    gulp.watch(basePaths.dest, ['drush']);
-    gulp.watch(folderPaths.templates.d8, ['drush']);
+    gulp.watch(basePaths.dest, ['drush-cp']);
+    gulp.watch(folderPaths.templates.d8, ['drush-cp']);
 });
