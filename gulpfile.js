@@ -237,6 +237,6 @@ gulp.task('bs-seul', ['browser-sync'], function () {
     gulp.watch(folderPaths.js.jsd68, bs_reload);
     gulp.watch(folderPaths.ymlsettings.d8yml, bs_reload);
     //Vide le chache drupal selon activité des dossiers - Fonctionne pas
-    //gulp.watch(basePaths.dest, ['drush']);
-    //gulp.watch(folderPaths.templates.d8, ['drush']);
+    gulp.watch(basePaths.dest, ['drush']);
+    gulp.watch(folderPaths.templates.d8, ['drush']);
 });
