@@ -181,7 +181,7 @@ gulp.task('drush', function() {
 
     ]))
     .pipe(plugins.notify({
-      title: "Vidage de Cache",
+      title: "Vidage de Cache avec Drush",
       message: "Cache Drupal vidé complètement.",
       onLast: true
     }));
