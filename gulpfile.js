@@ -191,8 +191,8 @@ gulp.task('drush', function() {
 });
 
 //Vidage de cache Drupal avec child_process
-gulp.task('drush-cp', function() {
-return cp.spawn('drush', ['cache-rebuild'], {stdio: 'inherit'})
+gulp.task('drush-cp', function(done) {
+  return cp.spawn('drush', ['cache-rebuild'], {stdio: 'inherit'})
   .on('close', done);
 
   .pipe(plugins.notify({
@@ -200,8 +200,8 @@ return cp.spawn('drush', ['cache-rebuild'], {stdio: 'inherit'})
     message: "Cache Drupal vidé complètement.",
     onLast: true
   }));
-});
 
+});
 
 //Initialisation de la tâche de browser-sync - MAJ 2019-11
 gulp.task('browser-sync', function() {
