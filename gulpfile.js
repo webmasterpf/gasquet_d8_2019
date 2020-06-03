@@ -176,10 +176,10 @@ gulp.task('drush', function() {
       read: false
     })
 
-    .pipe(plugins.shell([
+    plugins.shell.task(
       'drush @vmdevd8mg cron && drush @vmdevd8mg cr'
 
-    ]))
+    )
     .pipe(plugins.notify({
       title: "Vidage de Cache avec Drush",
       message: "Cache Drupal vidé complètement.",
