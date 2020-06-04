@@ -78,6 +78,8 @@ var postcss = require('gulp-postcss');
 var plugins = require('gulp-load-plugins')();
 var gutil = require('gulp-util');
 var gcache = require('gulp-cache');
+var git = require('gulp-git');
+
 //Plugins de PostCSS
 var autoprefixer = require('autoprefixer');
 
@@ -200,9 +202,13 @@ gulp.task('drush-cp', function(done) {
     onLast: true
   })); */
   ;
+});
 
-
-
+// Run git pull from multiple branches
+gulp.task('pull', function () {
+    git.pull('origin', ['master', 'developpement', 'retroportage'], function (err) {
+        if (err) throw err;
+    });
 });
 
 //Initialisation de la tâche de browser-sync - MAJ 2019-11
@@ -225,6 +231,12 @@ gulp.task('clearCache', function (done) {
             onLast: true
         }));
 });
+
+// ##########################################
+// Tâches de surveillance et d'automatisation
+// ##########################################
+//
+//
 //Tâche de surveillance et d'automatisation - Option1 bureau Option2 Télétravail
 gulp.task('default', ['browser-sync'], function () {
     //gulp.task('default', function(){
