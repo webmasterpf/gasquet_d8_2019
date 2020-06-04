@@ -390,7 +390,8 @@ ______________________________*/
 
             &[href*=".pdf"] {
                 &::before {
-                    @include backgroundImage("PNG/Fichiers@3x.png");
+                    @include maskImage(("PNG/Fichier-blanc@3x.png"), 100%, alpha, $vert);
+                    //@include backgroundImage("PNG/Fichiers@3x.png");
                     background-size: contain;
                     content: "";
                     position: relative;

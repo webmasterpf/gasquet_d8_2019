@@ -14579,7 +14579,22 @@ ______________________________*/
 
 #zone-2.type-fiche-formation aside.ficheform-savoirplus a[href*=".pdf"]::before,
 #zone-2.type-fiche-formation .bloc_docs_utiles_ficheform a[href*=".pdf"]::before {
-  background: transparent url("../images/PNG/Fichiers@3x.png") top left no-repeat;
+  /*
+Utilise la mixin backgroundImage pour l'image de BG. Bien spécifier les valeurs même par défaut Sinon
+problème de distribution des valeurs. Utiliser un visuel PNG blanc comme base pour meilleure
+application des couleurs.
+Ne pas utiliser //background-size: contain; si problèmes
+Ne pas utiliser d'image pour le background, couleur suffit
+Support partiel par Edge à partir de v42
+  */
+  background: #ADC91F;
+  -webkit-mask-image: url("../images/PNG/Fichier-blanc@3x.png");
+          mask-image: url("../images/PNG/Fichier-blanc@3x.png");
+  mask-mode: alpha;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
   background-size: contain;
   content: "";
   position: relative;
