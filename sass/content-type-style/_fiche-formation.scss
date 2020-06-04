@@ -285,7 +285,7 @@ h1.titre-fiche-formation {
 
     h2 {
         @include font-size(l); //utilisation de typey
-        color: $violet;
+        color: $bleu-turquoise;//test gulp drush-cp
     }
 
     h3 {
