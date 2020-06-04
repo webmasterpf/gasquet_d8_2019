@@ -190,7 +190,7 @@ gulp.task('drush', function() {
     }));
 });
 
-//Vidage de cache Drupal avec child_process
+//Vidage de cache Drupal avec child_process - 2020-06
 gulp.task('drush-cp', function(done) {
   return cp.spawn('drush', ['cache-rebuild'], {stdio: 'inherit'})
   .on('close', done);

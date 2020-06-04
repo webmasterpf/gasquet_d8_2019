@@ -1,6 +1,6 @@
 //** $Id: README.txt,v 1.1 02∕04∕2011
 
-ABOUT THEME testtachegulpbsdrush
+ABOUT THEME testtachegulpbsdrush2
 -----------
 
 Thème RWD pour les sites de l'Association développés sous Drupal 8.
