@@ -285,7 +285,7 @@ h1.titre-fiche-formation {
 
     h2 {
         @include font-size(l); //utilisation de typey
-        color: $bleu-turquoise;//test gulp drush-cp
+        color: $violet;
     }
 
     h3 {
@@ -323,7 +323,7 @@ ______________________________*/
         display: block;
 
         * {
-            background: linear-gradient(180deg, $violet 85%, $rose-fushia 50%);
+            background: linear-gradient(180deg, $bleu-turquoise 85%, $rose-fushia 50%);
             //@include backgroundRGBA ($rose-fushia,0.5);
             color: $jaune;
             font-weight: bold;

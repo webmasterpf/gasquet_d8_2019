@@ -14399,7 +14399,7 @@ body .conteneur .conteneur-flex #zone-3.type-fiche-formation {
 #zone-4.type-fiche-formation h2,
 #zone-5.type-fiche-formation h2 {
   font-size: 1.4375em;
-  color: #01ABCF;
+  color: #911381;
 }
 
 #zone-1.type-fiche-formation h3,
@@ -14513,8 +14513,8 @@ ______________________________*/
 }
 
 #zone-1.type-fiche-formation .complement-titre-fiche * {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #911381), color-stop(50%, #E30078));
-  background: linear-gradient(180deg, #911381 85%, #E30078 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #01ABCF), color-stop(50%, #E30078));
+  background: linear-gradient(180deg, #01ABCF 85%, #E30078 50%);
   color: #FAEB0C;
   font-weight: bold;
   padding: calc(0.5em + ((100% - 6em) / 12 * 0.02));
