@@ -254,14 +254,12 @@ gulp.task('bs-seul', ['browser-sync'], function () {
     gulp.watch(folderPaths.js.jsd68, bs_reload);
     gulp.watch(folderPaths.ymlsettings.d8yml, bs_reload);
     //Vide le chache drupal selon activité des dossiers - Fonctionne pas
-    gulp.watch(basePaths.dest, ['drush-cp']);
     gulp.watch(folderPaths.styles.dest, ['drush-cp']);
     gulp.watch(folderPaths.templates.d8, ['drush-cp']);
 });
 //Vidage de cache seul avec Surveillance - Pas de compilation
 gulp.task('drush-CC', function () {
     //Vide le chache drupal selon activité des dossiers - Fonctionne pas
-    gulp.watch(basePaths.dest, ['drush-cp']);
     gulp.watch(folderPaths.styles.dest, ['drush-cp']);
     gulp.watch(folderPaths.templates.d8, ['drush-cp']);
 });
