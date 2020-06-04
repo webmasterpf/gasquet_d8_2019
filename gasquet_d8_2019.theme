@@ -226,7 +226,7 @@ function gasquet_d8_2019_theme_suggestions_block_alter(array &$suggestions, arra
 }
 /**
  * Implements hook_preprocess_HOOK().
-*/
+
 function gasquet_d8_2019_preprocess_file_link(&$variables) {
   // Add target _blank attribute to all file links.
   $file = $variables['file'];
@@ -241,7 +241,9 @@ function gasquet_d8_2019_preprocess_file_link(&$variables) {
   $link = '<a href="'.$url.'" type="'.$file->filemime->value . '" length="' . $file->filesize->value . '" title="' . \Drupal\Component\Utility\Html::escape($file->filename->value) . '" target="_blank">' . \Drupal\Component\Utility\Html::escape($link_text) . '</a>';
   $variables['link']->setGeneratedLink($link);
 }
-/**
+*/
+
+/*
 *  Pour la page de résultats avec custom search module.
 * https://www.drupal.org/project/custom_search/issues/2915553
 */
