@@ -195,11 +195,11 @@ gulp.task('drush-cp', function(done) {
   return cp.spawn('drush', ['cache-rebuild'], {stdio: 'inherit'})
   .on('close', done);
 
-  .pipe(plugins.notify({
+ /*  .pipe(plugins.notify({
     title: "Vidage de Cache avec Drush",
     message: "Cache Drupal vidé complètement.",
     onLast: true
-  }));
+  })); */
 
 });
 
