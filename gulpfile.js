@@ -192,7 +192,7 @@ gulp.task('drush', function() {
 
 //Vidage de cache Drupal avec child_process - 2020-06
 gulp.task('drush-cp', function(done) {
-  return cp.spawn('drush', ['cache-rebuild'], {stdio: 'inherit'})
+  return cp.spawn('drush @vmdevd8mg cron && drush @vmdevd8mg cr', ['cache-rebuild'], {stdio: 'inherit'})
   .on('close', done);
 
  /*  .pipe(plugins.notify({
@@ -253,5 +253,6 @@ gulp.task('bs-seul', ['browser-sync'], function () {
     gulp.watch(folderPaths.ymlsettings.d8yml, bs_reload);
     //Vide le chache drupal selon activité des dossiers - Fonctionne pas
     gulp.watch(basePaths.dest, ['drush-cp']);
+    gulp.watch(folderPaths.styles.dest, ['drush-cp']);
     gulp.watch(folderPaths.templates.d8, ['drush-cp']);
 });
