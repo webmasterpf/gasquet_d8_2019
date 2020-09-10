@@ -227,6 +227,7 @@ function gasquet_d8_2019_theme_suggestions_block_alter(array &$suggestions, arra
 /**
  * Implements hook_preprocess_HOOK().
 */
+/*
 function gasquet_d8_2019_preprocess_file_link(&$variables) {
   // Add target _blank attribute to all file links.
   //Code remplacé par le module https://www.drupal.org/project/issues/file_download_link
@@ -252,7 +253,9 @@ function gasquet_d8_2019_preprocess_file_link(&$variables) {
   $variables['link']->setGeneratedLink($doc->saveHTML());
 }
 }
-
+//Suppression de la fonction car persistance de l'erreur sur site, module devrait suffire.
+// Error : Call to a member function setGeneratedLink() on array dans gasquet_d8_2019_preprocess_file_link() (/home/provence-formation-php7/www/mgasquet/sited8/themes/custom/gasquet_d8_2019/gasquet_d8_2019.theme ligne 244)
+*/
 /**
 *  Pour la page de résultats avec custom search module.
 * https://www.drupal.org/project/custom_search/issues/2915553
