@@ -1,3 +1,7 @@
+## Fichiers suivis dans tous les cas
+!package.json
+package-lock.json
+
 ## Fichiers ignorés
 /Import_Taxo_Termes.csv
 **.scssc
@@ -6,9 +10,6 @@
 **.db
 **.ftp*
 **Thumbs.db
-**.json
-package.json
-package-lock.json
 **.sqlite
 **.suo
 **/Thumbs.db
@@ -19,5 +20,5 @@ private
 node_modules
 config
 ## Exclusion des css compilées pour éviter conflits - inutile si compilation sur LAMP
-css/*
-**css/*
+!css/*
+!**css/*
