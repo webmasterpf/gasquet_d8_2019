@@ -29,10 +29,11 @@ $ULclasse:bxslider-hp;
           box-shadow: none;
           border: none;
           background: none;
-          max-height: inherit;
-          @include breakpoint(($desktop,$desktopwide)) {
-            max-height: 30em;
-          }
+          max-height: 60vw;
+        @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
+         min-height: 25vw;
+         max-height: 30vw;//Dépend de la valeur max donnée à la #zone-diaporama
+         }
         @include breakpoint(($mobilelandscape,$tablet,$tabletlandscape)) {
           //Pas besoin de réglages spécifiques
         }
