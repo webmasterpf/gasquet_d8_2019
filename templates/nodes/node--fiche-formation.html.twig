@@ -8,6 +8,7 @@ Permet d'ajouter des classes dynamiques ou non aux éléments du markup
 ] %}
 {% set titre_attribute = create_attribute() %}
 {% set taxo_attribute = create_attribute() %}
+{% set taxo2_attribute = create_attribute() %}
 {% set complement_attribute = create_attribute() %}
 {% set image_attribute = create_attribute() %}
 {% set imagecontainer_attribute = create_attribute() %}
@@ -22,6 +23,10 @@ Permet d'ajouter des classes dynamiques ou non aux éléments du markup
 {% set taxo_classes = [
 'terme-pole',
 'terme-' ~ content.field_filiere_de_formation[0]['#title']|clean_class | replace({"^" : ""}),
+]%}
+{% set taxo2_classes = [
+'modalite-alternance',
+'terme-' ~ node.field_modalite_alternance[0]['#title'] | clean_class | replace({"^" : ""}),
 ]%}
 {% set complement_classes = [
 'complement-titre-fiche',
@@ -123,6 +128,13 @@ Permet d'ajouter des classes dynamiques ou non aux éléments du markup
         {{ content.field_complement_ficheform.0 }}
       </span>
       {{ content.body }}
+      {# Affichage conditionnel du terme si alternance #}
+      {% if content.field_modalite_alternance | render is not empty %}
+        <span {{ taxo2_attribute.addClass(taxo2_classes) }}>
+          Possible
+          {{ content.field_modalite_alternance.0 }}
+        </span>
+      {% endif %}
       {{ content.field_contenu_suite_ficheform.0}}
     </div>
     <!-- /.content -->
