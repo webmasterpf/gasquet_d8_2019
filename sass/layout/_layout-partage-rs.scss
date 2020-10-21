@@ -71,7 +71,7 @@ $zones: zone-1, zone-2, zone-3;
 
           li {
             a {
-              @include rollover-effect($gris-anthracite); //Effet rollover CSS3
+              @include rollover-effect($rose-fushia); //Effet rollover CSS3
               padding: 0; // Annule effet hover autres liens de la page
             }
           }
