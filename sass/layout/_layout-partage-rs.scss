@@ -57,8 +57,7 @@ body .conteneur {
 // Fin .conteneur
 /*######-------- ||| STYLE ||| --------######*/
 //Boucle pour englober tous les TdC concernés
-$typedecontenu: type-contenu-vdl, type-contenu-actualites,
-type-fiche-formation, type-page-lycee;
+$typedecontenu: type-contenu-vdl, type-contenu-actualites, type-fiche-formation, type-page-lycee;
 $zones: zone-1, zone-2, zone-3;
 @each $zone in $zones {
   @each $type in $typedecontenu {
