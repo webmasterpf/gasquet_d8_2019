@@ -129,7 +129,7 @@ $zonesimg: zone-illustration;
         @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
             padding: span(0.2);
         }
-        table,tbody,tr,td,form,input[type="text"],input[type="email"]{
+        table,tbody,tr,td,form,input[type="text"],input[type="email"],select,textarea{
             width: 95%;
             margin: 0 auto;
             @include arrondis(1.5em);
@@ -215,16 +215,23 @@ ______________________________*/
         }
     }
 }
-#zone-2.type-webform{
+$typedecontenu: type-webform, type-page-lycee ;//2e boucle -  CLASS_NAME_CONTENU2, CLASS_NAME_CONTENU3
+$zones: zone-2 ;//1ere boucle
+@each $zone in $zones {
+    @each $type in $typedecontenu{
+        ##{$zone}.#{$type}
+        {
     aside.formulaire{
-
         input[type="text"],input[type="email"],textarea{
             background: $rose-fushia;
             color: $blanc-casse;
             padding: span(0.01);
         }
     }
-}
+
+} // Fin ##zone#type
+} // Fin @each type
+}// Fin @each zones
 #zone-3.type-webform{}
 #zone-4.type-webform{}
 #zone-5.type-webform{}

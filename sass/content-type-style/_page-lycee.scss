@@ -367,6 +367,10 @@ ______________________________*/
     }
 
   }
+  aside.resa-jpo{
+    max-width: 95%;
+    margin: 0 auto;
+  }
 
   .videos {
     ul{
@@ -380,11 +384,41 @@ ______________________________*/
       padding: span(0.02);
       border: em(3px) solid $rose-fushia;
     }
+}
+} // Fin content
+aside.formulaire{
+  //Style pour formulaire
+     textarea,input[type="text"],input[type="email"],input[type="tel"]{
+          background: $violet; // Couleur fond des champs
+          color: $blanc-casse;
+
+
+      }
+      input:not([type='tel']) {
+      // Pas de padding:  pour le champ telephone
+    padding: span(0.01);
+  }
+  }// Fin aside.formulaire
+} // Fin ##{$zone}.#{$type}
+}// Fin @each $type in $typedecontenu
+} // Fin @each $zone in $zones
+#zone-1.type-page-lycee{
+  div.cartouche{
+    //Cartouche pour texte avec style différent ex: page JPO
+    background: $gris-clair;
+    border-style: dashed none;
+    border-color: $violet;
+    border-width: em(2px);
+    em {//texte italique
+      color: $gris-anthracite;
     }
+    strong {
+      color: $bleu-turquoise;
     }
 }
 }
-}
+
+
 /*######-------- ZONE 2 --------######*/
 #zone-2.type-contenu-cdi,
 #zone-2.type-page-lycee {
@@ -503,12 +537,17 @@ ______________________________*/
           background-size: contain;
           content: "";
           position: relative;
-          rose-fushiaical-align: sub;
-          padding: em(10px);
-          margin: em(3px);
+          vertical-align: middle;
+          padding: em(13px);
+          margin: em(3px) em(10px) em(3px) 0;
           transition: 0.5s all;
           display: inline-block;
           transform: scale(1);
+          min-height: em(30px);
+          @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)) {
+            // Pour ne pas tronquer le picto
+            min-height: em(33px);
+          }
         }
       }
 
@@ -519,16 +558,21 @@ ______________________________*/
       a[href*="/"]:not([href*=".pdf"]) {
         //pour cibler les liens externes et internes, exclure les pdf
         &::before {
-          @include backgroundImage("PNG/liens@3x.png");
+          @include maskImage(("PNG/liens-blanc@3x.png"),100%,alpha,$gris-clair-moyen);
           background-size: contain;
           content: "";
           position: relative;
-          rose-fushiaical-align: sub;
-          padding: em(10px);
-          margin: em(3px);
+          vertical-align: middle;
+          padding: em(13px);
+          margin: em(3px) em(10px) em(3px) 0;
           transition: 0.5s all;
           display: inline-block;
           transform: scale(1);
+          min-height: em(30px);
+          @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)) {
+            // Pour ne pas tronquer le picto
+            min-height: em(33px);
+          }
         }
       }
     }
