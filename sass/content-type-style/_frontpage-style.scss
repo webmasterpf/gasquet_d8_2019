@@ -232,24 +232,24 @@ body .conteneur {
               @include maskImage(("PNG/notification-blanc@4x.png"),100%,alpha,$rose-fushia);
               background-size: contain;
               content: "";
-              position: relative;
+              position: absolute;
               vertical-align: middle;
-              padding: em(13px);
-              margin: em(3px) em(10px) em(3px) 0;
+              padding: em(33px);
+              margin: em(10px) em(0px) em(0px) 0;
               transition: 0.5s all;
               display: inline-block;
               transform: scale(1);
               min-height: em(30px);
               @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)) {
               // Pour ne pas tronquer le picto
-              min-height: em(33px);
+              min-height: em(80px);
             }
             }
             li{
                 list-style: none;
                 color: $gris-anthracite;
                 max-width: 95%;
-                margin: span(0.1) 0 span(0.2) span(0.2);
+                margin: span(0.1) 0 span(0.2) span(0.8);
                 float: none;
                 /*                @include breakpoint ($mobile){
                                     width: 95%;
