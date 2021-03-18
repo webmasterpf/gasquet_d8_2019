@@ -18,7 +18,8 @@
 
 
 //Code imbriqué à 100%
-body.front section.conteneur{
+body.front section.conteneur,
+body .conteneur {
     //inutile de définir taille
     .content-inner{
         iframe,img:not(.close-btn){
