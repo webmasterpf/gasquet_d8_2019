@@ -375,9 +375,22 @@ ______________________________*/
     }
 
     aside.ficheform-savoirplus {}
-}
 
-//#zone-1.type-fiche-formation
+    .videos {
+      ul{
+        list-style: none;
+      }
+      iframe{
+        @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)) {
+        max-height: 85vh;
+        max-width: 60vw;
+        margin: 0 auto;
+        padding: span(0.02);
+        border: em(3px) solid $rose-fushia;
+      }
+  }
+} // Fin videos
+}//#zone-1.type-fiche-formation
 
 #zone-2.type-fiche-formation {
 
