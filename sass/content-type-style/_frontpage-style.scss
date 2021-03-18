@@ -223,28 +223,28 @@ body .conteneur {
     .annonce_alaUne{
         h3{//ajout picto en place du titre h3
            display: none;
-           &::before {
-             //@include backgroundImage("PNG/Fichiers@3x.png");
-             @include maskImage(("PNG/notification-blanc@4x.png"),100%,alpha,$rose-fushia);
-             background-size: contain;
-             content: "";
-             position: relative;
-             vertical-align: middle;
-             padding: em(13px);
-             margin: em(3px) em(10px) em(3px) 0;
-             transition: 0.5s all;
-             display: inline-block;
-             transform: scale(1);
-             min-height: em(30px);
-             @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)) {
-             // Pour ne pas tronquer le picto
-             min-height: em(33px);
-           }
-           }
+
         }
         ul.actu-brulante{
             list-style: none;
-
+            &::before {
+              //@include backgroundImage("PNG/Fichiers@3x.png");
+              @include maskImage(("PNG/notification-blanc@4x.png"),100%,alpha,$rose-fushia);
+              background-size: contain;
+              content: "";
+              position: relative;
+              vertical-align: middle;
+              padding: em(13px);
+              margin: em(3px) em(10px) em(3px) 0;
+              transition: 0.5s all;
+              display: inline-block;
+              transform: scale(1);
+              min-height: em(30px);
+              @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)) {
+              // Pour ne pas tronquer le picto
+              min-height: em(33px);
+            }
+            }
             li{
                 list-style: none;
                 color: $gris-anthracite;
