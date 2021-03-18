@@ -26,13 +26,13 @@ body.front section.conteneur{
         @include img-centered;
     }
     .middle-content  img{
-      
+
     }
     }
-    
+
     .annonce_1{
                @include clearfixsusy3;
-                @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
+    @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){
         width: span(10 of $desktopcol);
         margin-left: span(1 wide);//push
         }
