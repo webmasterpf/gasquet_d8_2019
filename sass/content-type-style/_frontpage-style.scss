@@ -240,8 +240,11 @@ body .conteneur {
               display: inline-block;
               transform: scale(1);
               min-height: em(30px);
+              //Pas affiché sur mobile
+              display: none;
               @include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)) {
               // Pour ne pas tronquer le picto
+              display: initial;
               min-height: em(80px);
             }
             }
