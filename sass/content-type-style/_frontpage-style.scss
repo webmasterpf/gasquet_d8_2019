@@ -22,6 +22,20 @@ $tabletlandscape-hd:
 //@include breakpoint(($desktop,$desktopwide,$mobilelandscape,$tablet,$tabletlandscape)){}
 
 /*######-------- ||| LAYOUT SPECIFIQUE ||| --------######*/
+//Splash avec colorbox - hors body
+div#colorbox{
+  iframe.cboxIframe{
+    h2{
+      @include font-size(l); //utilisation de typey
+      color: $violet;
+    }
+    p{
+      @include font-size(m); //utilisation de typey
+      padding: em(5px);
+      line-height: 1.5em;
+    }
+  }
+}
 .annonce_2{
 
     ul.badnews{
@@ -166,6 +180,7 @@ ul.rubriques-speciales{
         max-width: span(11);
         margin: span(0.5)  span(0.2);
         $nb-elements:3;//ajuster le nombre d'items réels pour éviter les bugs FF ou Edge - RAS Chrome
+        // si display: inline-flex;//Résoud bug FF sur titre des boutons,alors pas imperatif
         @include breakpoint(($desktop,$desktopwide,
         $tablet-hd,$tabletlandscape-hd
         )){
@@ -178,7 +193,7 @@ ul.rubriques-speciales{
         }
         @include breakpoint($tablet){
           display:inline-block;
-          column-count: 3;//Selon nombre éléments à afficher
+          column-count: $nb-elements;//Selon nombre éléments à afficher
           column-fill: balance;
           white-space: normal;
           margin-left: span(2 wide);//centrage des boutons sur tablette portrait
@@ -201,7 +216,7 @@ ul.rubriques-speciales{
             margin: 0 5vw;
             width: 75%;
         }
-    }
+    } // Fin rubriques-contact
     aside.pageFacebook{
       //Likebox FB classe via BlockClass
       @include breakpoint(($desktop,$desktopwide,
@@ -212,7 +227,8 @@ ul.rubriques-speciales{
     }
     @include breakpoint($tablet){}
     @include breakpoint(($mobilelandscape,$tabletlandscape)){}
-    }
+  } // Fin pageFacebook
+
 //Bloc de partage RS avec social simple. Voir scss dédié _layout-partage-rs
 /*######-------- ||| STYLE ||| --------######*/
 
@@ -559,20 +575,24 @@ body .conteneur {
                             max-width: 11vw;
                             max-height: 11vw;
                             vertical-align: middle;
+                            display: inline-flex;//Résoud bug FF
                         }
                         @include breakpoint(($tablet,$tabletlandscape)){
                             max-width: 20vw;
                             min-height: 14vw;
+                            display: inline-flex;//Résoud bug FF
                         }
                         @include breakpoint($mobilelandscape){
                             max-width: 20vw;
                             min-width: 12vw;
                             min-height: 20vw;
+                            display: inline-flex;//Résoud bug FF
                         }
                         @include breakpoint(($mobile-galaxyShd,$mobile-iphonehd)){
                             max-width: 50vw;
                             max-height: 50vw;
                             margin: 0 auto;
+                            display: inline-flex;//Résoud bug FF
                         }
                         a{
                             display: block;
@@ -771,10 +791,52 @@ body .conteneur {
     }
 
     @include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
-        .annonce_1{}
-        .annonce_2{}
-        .HPDiapo{}
-        .acces_rubriques{}
-        .logo_partenaires{}
+        .annonce_1 {}
+
+        .annonce_2 {}
+
+        .HPDiapo {}
+
+        .acces_rubriques {}
+
+        .logo_partenaires {}
+    }
+}
+
+//body.container
+body {
+    div#colorbox {
+        iframe.cboxIframe {
+
+            //Style contenu splashify
+            h2 {
+                @include font-size(m); //utilisation de typey
+
+                @include breakpoint(($desktop, $desktopwide, $mobilelandscape,
+                        $tablet, $tabletlandscape)) {
+                    @include font-size(l); //utilisation de typey
+                }
+            }
+
+            h3 {
+                @include font-size(s); //utilisation de typey
+
+                @include breakpoint(($desktop, $desktopwide, $mobilelandscape,
+                        $tablet, $tabletlandscape)) {
+                    @include font-size(m); //utilisation de typey
+                }
+            }
+
+            a {
+                @include font-size(m); //utilisation de typey
+                color: $gris-anthracite;
+
+                @include breakpoint(($desktop, $desktopwide, $mobilelandscape,
+                        $tablet, $tabletlandscape)) {
+                    @include font-size(l); //utilisation de typey
+                }
+            }
+        }
+
     }
 }
