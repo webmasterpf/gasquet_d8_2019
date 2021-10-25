@@ -221,6 +221,7 @@ browserSync.init({
         //proxy: 'http://d8-rostand.vmdev/',
         proxy: 'https://d8mg-pfdev.provence-formation.fr/',
         host: 'd8mg-pfdev.provence-formation.fr',
+        port: 8080, //<-- changed default port (default:3000);
         online: true,
         open: 'external',
         //open: false,
