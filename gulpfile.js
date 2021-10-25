@@ -12,10 +12,10 @@ var basePaths = {
     dest:  './css/', // dossier à livrer
     tpl: '**/*.tpl.php',
     node_modules: './node_modules/',
-    gems:'/home/webmaster/vendor/bundle/gems/',
-    drushscript:'/home/webmaster/.config/composer/vendor/drush/drush/drush.php',
-    drushd6aliasfile:'/home/webmaster/.drush/sitesvmd6.aliases.drushrc.php',
-    drushd8aliasfile:'/home/webmaster/.drush/sitesvmd8.aliases.drushrc.php'
+    gems:'~/vendor/bundle/gems/',
+    drushscript:'~/.config/composer/vendor/drush/drush/drush.php',
+    drushd6aliasfile:'~/.drush/sitesvmd6.aliases.drushrc.php',
+    drushd8aliasfile:'~/.drush/sitesvmd8.aliases.drushrc.php'
 };
 
 //Chemins spécifiques
@@ -123,7 +123,9 @@ var processors = [
 //}
 
 //Variables spécifiques au thèmes
-var urlSite = ['http://d8-gasquet.vmdev/'];
+//var urlSite = ['http://d8-rostand.vmdev];
+// Pour DEV sur hébergement
+var urlSite = ['https://d8mg-pfdev.provence-formation.fr/'];
 var aliasDrush = ['@vmdevd8mg'];
 // #############################
 // Tâches à accomplir - Tasks
@@ -204,8 +206,8 @@ gulp.task('drush-cp', function(done) {
   ;
 });
 
-// Run git pull from multiple branches
-gulp.task('pull', function () {
+// Run git pull from multiple branches - 2020-08
+gulp.task('majgitpull', function () {
     git.pull('origin', ['master', 'developpement', 'retroportage'], function (err) {
         if (err) throw err;
     });
@@ -216,8 +218,12 @@ gulp.task('browser-sync', function() {
 browserSync.init({
         //changer l'adresse du site pour lequel utiliser browserSync, solution par variable fonctionne pas
 //        proxy: '.urlSite.',
-        proxy: 'http://d8-gasquet.vmdev/',
-        open: false,
+        //proxy: 'http://d8-rostand.vmdev/',
+        proxy: 'https://d8mg-pfdev.provence-formation.fr/',
+        host: 'd8mg-pfdev.provence-formation.fr',
+        online: true,
+        open: 'external',
+        //open: false,
         logLevel: 'info',//pour avoir toutes les infos ,utiliser "debug", pour infos de base "info"
         logConnections: true
     });
