@@ -1,25 +1,21 @@
 {
-  "name": "gasquet_d8_2019",
-  "version": "1.1.0",
-  "description": "Compilation W10",
+  "name": "rostand_d8_2021",
+  "version": "1.0.0",
+  "description": "Pour compilation locale du theme",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/webmasterpf/gasquet_d8_2019.git"
+    "url": "git+ssh://git@gitlab.com/themes-d8/rostand_d8_2021.git"
   },
-  "keywords": [
-    "d8",
-    "localcompile"
-  ],
-  "author": "WPF",
+  "author": "WPF Dell",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/webmasterpf/gasquet_d8_2019/issues"
+    "url": "https://gitlab.com/themes-d8/rostand_d8_2021/issues"
   },
-  "homepage": "https://github.com/webmasterpf/gasquet_d8_2019#readme",
+  "homepage": "https://gitlab.com/themes-d8/rostand_d8_2021#readme",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "breakpoint": "^0.1.6",
